@@ -1,0 +1,38 @@
+.header {
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.header.header-with-image {
+	background-image: url("http://p-hold.com/800/480");
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.header-title {
+	color:white;
+}
+
+
+/* Buttons */
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: #1fa89a;
+  border-color: #1fa89a; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  background-color: #0a897c;
+  border-color: #0a897c; }
