@@ -1,5 +1,5 @@
 .header {
-	padding-top: 6rem;
+	padding-top: 9rem;
 	padding-bottom: 3rem;
 	text-align: center;
 }
@@ -8,10 +8,20 @@
 	background-image: url("http://p-hold.com/800/480");
 	background-size: cover;
 	background-position: 50% 50%;
+	height: 18rem;
 }
 
 .header-title {
 	color:white;
+}
+
+.section-heading {
+	font-size: 2rem;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
+	text-align: center;
+	padding-top: 6rem;
+	text-transform: uppercase;
 }
 
 
