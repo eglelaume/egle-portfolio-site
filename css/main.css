@@ -1,3 +1,53 @@
+/* Navigation */
+
+.navbar-container {
+	background: black;
+
+}
+
+.navbar-list {
+	list-style-type: none;
+	padding: 0;
+	display:inline-block;
+	float:right;
+	margin:0;
+}
+
+.navbar-logo a {
+	text-align: left;
+	padding-left:0;
+}
+
+.navbar-item {
+	display: inline-block;
+	float:left;
+	margin: 0;
+}
+
+.navbar-item a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.5rem 2rem;
+}
+
+.navbar-item:hover a {
+	color:red;
+
+}
+
+@media (max-width: 400px) {
+	.navbar-item {
+		display: block;
+		width: 100%;
+	}
+	.navbar-list {
+		display: block; 	
+	}
+}
+
+
+
 .header {
 	padding-top: 9rem;
 	padding-bottom: 3rem;
