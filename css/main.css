@@ -36,13 +36,46 @@
 
 }
 
-@media (max-width: 400px) {
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding: 0.8rem;
+	display: none;
+	cursor: pointer;
+}
+
+.show-menu:before { content:'\2630'; }
+
+/*Hide checkbox*/
+input.menu-toggle[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
+    display: block;
+}
+
+
+@media (max-width: 550px) {
 	.navbar-item {
 		display: block;
 		width: 100%;
 	}
 	.navbar-list {
-		display: block; 	
+		display: none;
+		width: 100%; 	
+	}
+
+	.show-menu {
+		display: inline-block;
+		float: right;
+	}
+
+	.navbar-logo {
+		display: inline-block;
+		width: initial;
 	}
 }
 
