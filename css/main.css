@@ -141,6 +141,20 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 	color: #666666;
 }
 
+.see-more a{
+	text-decoration: none;
+	float: right;
+	color: #000;
+	display:block;
+}
+
+.see-more:hover a {
+	color: #666666;
+}
+
+
+
+
 /* Buttons */
 
 .button.button-primary,
