@@ -155,7 +155,14 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 .footer-container {
 	background: #333333;
+	position:relative;
+	clear:both;
 
+}
+
+#wrapper {
+	height:auto;
+	min-height:100%;
 }
 
 .footer-logo a {
@@ -276,3 +283,8 @@ label > .label-body {
   .contact-form {
   	padding-top: 4rem;
   }
+
+  .container.portfolio-grid {
+  	padding-top: 5rem;
+  }
+
