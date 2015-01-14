@@ -146,14 +146,48 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 	float: right;
 	color: #000;
 	display:block;
+	padding-bottom: 5rem;
 }
 
 .see-more:hover a {
 	color: #666666;
 }
 
+.footer-container {
+	background: #333333;
 
+}
 
+.footer-logo a {
+	display: inline-block;
+	float:left;
+	margin: 0;
+	padding-top: 0.5rem;
+	padding-bottom: 0rem;
+	text-decoration: none;
+}
+
+.footer-list {
+	list-style-type: none;
+	display:inline-block;
+	float:right;
+	margin:0;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.footer-item {
+	display: inline-block;
+	float:left;
+	margin: 0;
+	padding-top: 0.2rem;
+	padding-bottom: 0rem;
+
+}
+
+.footer-item .fa {
+	padding: 1rem;
+	}
 
 /* Buttons */
 
@@ -176,3 +210,69 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   background-color: #0a897c;
   border-color: #0a897c; }
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+  .contact-form {
+  	padding-top: 4rem;
+  }
