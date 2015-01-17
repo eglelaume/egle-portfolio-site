@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+
+
+    </head>
+
+    <body>
+        {% include header.html context=page.context %}
+        <div class="container">
+            {{content}}
+
+        </div>
+        {% include footer.html %}
+    </body>
+
+</html>
