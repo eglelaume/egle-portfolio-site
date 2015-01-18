@@ -9,7 +9,7 @@
 
         <ul class="navbar-list">
             <li class="navbar-item"><a href="./portfolio.html">Portfolio</a></li>
-            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="./about.html">About</a></li>
             <li class="navbar-item"><a href="./contact.html">Contact</a></li>
         </ul>
     </div>                     
@@ -26,5 +26,8 @@
     {% endif %}  
     {% if include.context == "portfolio" %}
         <h1 class="header-title">See my work</h1>
+    {% endif %} 
+    {% if include.context == "about" %}
+        <h1 class="header-title">See my skills</h1>
     {% endif %}  
 </section>
