@@ -1,0 +1,4 @@
+collections:
+    portfolio_entries:
+        output: true
+        permalink: /portfolio/:path/

@@ -3,22 +3,9 @@ layout: default
 context: home
 ---
 
-<section class="container latest-work">
+<section class="">
     <h3 class="section-heading"><a href="#">My latest work</a></h3>
-    <div class="row image-grid">
-        <div class="four columns">
-            <a href="#"><img class="u-max-full-width" src="http://placekitten.com/300/250"></a>
-            <p class="project-title"><a href="#">GTR responsive website design</a></p>
-        </div>
-        <div class="four columns">
-            <a href="#"><img class="u-max-full-width" src="http://placekitten.com/300/250"></a>
-            <p class="project-title"><a href="#">Magazine layouts</a></p>
-        </div>
-        <div class="four columns">
-            <a href="#"><img class="u-max-full-width" src="http://placekitten.com/300/250"></a>
-            <p class="project-title"><a href="#">Premiere responsive website design</a></p>
-        </div>
-    </div>
+    {% include latest_work_widget.html %}
     <h6 class="see-more"><a href="#">See more ></a></h5>
 </section>
 
