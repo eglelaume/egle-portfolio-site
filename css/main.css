@@ -1,7 +1,7 @@
 /* Navigation */
 
 .navbar-container {
-	background: black;
+	background: #fff;
 
 }
 
@@ -35,7 +35,7 @@
 	text-align: center;
 	text-decoration: none;
 	padding: 2rem;
-	color: #fff;
+	color: #000;
 }
 
 .navbar-item:hover a {
@@ -45,7 +45,7 @@
 
 .show-menu {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	text-align: center;
 	padding: 0.8rem;
 	display: none;
@@ -103,7 +103,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 	background-image: url("http://x3.cdn03.imgwykop.pl/c3201142/comment_qO33LyIkR8Jfcyb9gEBUsLrsohMPmkp8.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
-	height: 18rem;
+	height: 26rem;
 
 }
 
