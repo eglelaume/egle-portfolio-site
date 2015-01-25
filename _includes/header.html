@@ -15,6 +15,7 @@
     </div>                     
 </nav>
 
+{% if include.context != "portfolio" %}
 <section class="header header-with-image">
     {% if include.context == "home" %}
         <h1 class="header-title">Some text here</h1>
@@ -24,10 +25,8 @@
         <h1 class="header-title">Contact me</h1>
         <a class="button button-primary" href="mailto:egle.strockyte@gmail.com">Email me</a>
     {% endif %}  
-    {% if include.context == "portfolio" %}
-        <h1 class="header-title">See my work</h1>
-    {% endif %} 
     {% if include.context == "about" %}
         <h1 class="header-title">See my skills</h1>
     {% endif %}  
 </section>
+{% endif %} 

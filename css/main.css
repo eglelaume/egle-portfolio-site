@@ -1,10 +1,88 @@
 
-body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  color: #222; }
+/* Portfolio grid */
+
+.portfolio-grid-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-header-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%
+}
+
+.grid-item-header {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 15, 44, 0.2);
+
+}
+
+.grid-item-header-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    color:white;
+}
+
+.grid-item-image-expand {
+    padding: 50%;
+    overflow: hidden;
+}
+
+.grid-item-image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(2) {
+    opacity: 0;
+}
+.portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(1) {
+   
+}
+
+.portfolio-grid-item:hover .grid-item-header-title {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem
+
+}
+
+
+@media (min-width: 550px) {
+    .four.columns.portfolio-grid-item-wrap {
+        width: 31.33333333333333%;
+    }
+    .columns.portfolio-grid-item-wrap {
+        margin-left: 2%; 
+        margin-bottom: 2%;
+    }
+    .columns.portfolio-grid-item-wrap:first-child {
+        margin-left: 0; 
+    }
+
+}
+
 
 /* Navigation */
 
@@ -305,3 +383,22 @@ label > .label-body {
   .row.image-grid {
   	padding-top:1rem;
   }
+
+
+  /* Skeleton overwrites */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+
+
+/* Utilities */
+
+.u-full-height {
+    height: 100%;
+}

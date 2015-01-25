@@ -2,8 +2,7 @@
  	{% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
     {% for entry in entries limit:3 %} 
         <div class="four columns">
-            <a href="{{ entry.url }}"><img class="u-max-full-width" src="{{ entry.thumb }}"></a>
-            <p class="project-title"><a href="{{ entry.url }}">{{ entry.title }}</a></p>
+           {% include portfolio_grid_item.html entry=entry %}
         </div>
     {% endfor %}
 </div>
