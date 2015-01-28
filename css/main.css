@@ -199,29 +199,14 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     padding-top: 50px;
 }
 
-.section-heading a {
-	line-height: 1.3;
-	text-align: center;
-	padding-top: 6rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 16px;
-    letter-spacing: 5px;
-	font-weight: 600;
-	color: #000;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-
-}
 
 .section-heading {
     line-height: 1.3;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 3rem;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
     display:block;
     margin-left: auto;
@@ -229,8 +214,14 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 
-.section-heading:hover a {
-	color: #666666;
+.section-description{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #202020;
+    font-family: "montserrat",arial,sans-serif;
+
 }
 
 .project-title a {
@@ -310,8 +301,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: #1fa89a;
-  border-color: #1fa89a; }
+  color: #FFF;
+  background-color: transparent;
+  border-color: #fff; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -322,9 +314,35 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background-color: #0a897c;
-  border-color: #0a897c; }
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
 
+
+.button.button-form,
+button.button-form,
+input[type="submit"].button-form,
+input[type="reset"].button-form,
+input[type="button"].button-form {
+    color: #000;
+  background-color: transparent;
+  border-color: #000;
+   }
+.button.button-form:hover,
+button.button-form:hover,
+input[type="submit"].button-form:hover,
+input[type="reset"].button-form:hover,
+input[type="button"].button-form:hover,
+.button.button-form:focus,
+button.button-form:focus,
+input[type="submit"].button-form:focus,
+input[type="reset"].button-form:focus,
+input[type="button"].button-form:focus {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -421,33 +439,45 @@ body {
 /* Header image text */
 
 
-.header.header-image {
+.header-with-image {
     background-image: url("http://summitsearch.org/system/photos/photos/2423/medium/IMG_5504.jpg?1362076856");
     background-size: cover;
     position: relative;
     display: block;
     width: 100%;
-    height: 100px;
+    height: 600px;
 }
     
-.header-image-header-wrap {
+.header-content {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%
 }
 
-.header-image-header {
+.header-cta-wrap {
     display: table;
     width: 100%;
     height: 100%;
 }
 
-.header-image-header-title {
+.header-cta {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     width: 100%;
+    
+}
+
+.header-cta-title {
     color:white;
 }
 
+.skills {
+background-size: cover;
+display: block;
+max-width: 100%;
+background-color: #ccc;
+margin-left: 0;
+margin-right: 0;
+}
