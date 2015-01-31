@@ -173,8 +173,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: table;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 15, 44, 0.2);
-
 }
 
 .grid-item-header-title {
@@ -213,6 +211,10 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     -webkit-transition: opacity .25s ease-in-out;
 }
 
+
+.grid-item-header:hover {
+    background-color: rgba(0, 15, 44, 0.4);
+}
 .portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(2) {
     opacity: 0;
 }
@@ -261,7 +263,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 .about-statement {
     padding-left: 6rem; 
     padding-right: 6rem;   
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 4rem; 
 }
 
