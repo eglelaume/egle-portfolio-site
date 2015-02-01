@@ -154,6 +154,13 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 /* Portfolio items grid
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.section-heading {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #202020;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .portfolio-grid-item {
     position: relative;
@@ -245,11 +252,13 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 .see-more a{
+    font-size: 2rem;
+    font-weight: 400;
     text-decoration: none;
-    float: right;
-    color: #000;
+    text-align: center;
+    color: #64c9dc;
     display:block;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
 }
 
 .see-more:hover a {
@@ -293,6 +302,18 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     }
 }
 
+.view-my-work a{
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: #64c9dc;
+    display:block;
+}
+
+.view-my-work:hover a {
+    color: #666666;
+}
 
 /* About page - skills section 
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -369,17 +390,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     font-weight: 400;
 }
 
-.view-my-work a{
-    font-size: 2rem;
-    text-decoration: none;
-    text-align: center;
-    color: #64c9dc;
-    display:block;
-}
-
-.view-my-work:hover a {
-    color: #666666;
-}
 
 
 /*Footer
