@@ -156,11 +156,9 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /* Portfolio items grid
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .section-heading {
-    padding-top: 2rem;
-    font-size: 2.4rem;
+    padding-top: 5rem;
     text-align: center;
     color: #202020;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-grid-item {
@@ -266,6 +264,66 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     color: #666666;
 }
 
+/* Portfolio entry (GTR website)
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.portfolio-entry-subheader {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+    color: #fff;
+    padding-top:0;
+    padding-left:5rem;
+}
+
+.portfolio-entry-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    padding-left:5rem;
+
+}
+
+.portfolio-item-description {  
+    padding-top: 5rem;
+    padding-bottom: 4rem; 
+    float: left;
+}
+
+.portfolio-item-subhead {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.portfolio-item-header {
+    text-align: left;
+
+}
+
+.left-align-link a{
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+    color: #64c9dc;
+    display:block;
+}
+
+.left-align-link:hover a {
+    color: #666666;
+}
+
+.portfolio-item-image {
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 600px;
+}
 
 /*About page - personal statement section
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
