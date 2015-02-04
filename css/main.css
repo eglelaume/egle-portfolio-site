@@ -118,6 +118,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: block;
     width: 100%;
     height: 600px;
+
 }
 
 @media (max-width: 750px) {    
@@ -342,18 +343,36 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     padding-right: 0;
 }
 
-/*> means that every child after that particular parent will be affected. this reduces extra classes creation*/
-.page-section-left-aligned > .page-section-header {
-    text-align: left;
+@media (max-width: 550px) {
+    .page-section-left-aligned > .page-section-header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+     .page-section-left-aligned > .page-section-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
 }
 
-.page-section-left-aligned > .page-section-content {
-    text-align: left;
+
+@media (min-width: 750px) {
+    /*> means that every child after that particular parent will be affected. this reduces extra classes creation*/
+    .page-section-left-aligned > .page-section-header {
+        text-align: left;
+    }
+
+    .page-section-left-aligned > .page-section-content {
+        text-align: left;
+    }
+
+    .page-section-left-aligned > .page-section-link {
+        float: left;
+    }
 }
 
-.page-section-left-aligned > .page-section-link {
-    float: left;
-}
 
 .page-section-content {
     font-size: 2rem;
