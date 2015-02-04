@@ -32,12 +32,12 @@
     {% endif %}
     {% if include.context == "portfolio_entry" %}
     <section class="header header-with-image" style="background-image: url('{{ page.hero_image }}')">
-        <div class="row">
-            <div class="twelve columns header-content">
-                <div class=" header-cta-wrap">
-                    <div class="header-cta">
-                        <h1 class="portfolio-entry-title">{{page.title}}</h1>
-                        <h6 class= "portfolio-entry-subheader">{{page.abstract}}</h6>
+        <div class="container u-full-height">
+            <div class="header-content">
+                <div class="header-cta-wrap">
+                    <div class="header-cta header-cta-portfolio-entry">
+                            <h1 class="header-cta-title">{{page.title}}</h1>
+                            <h6 class="header-cta-subheader">{{page.abstract}}</h6>
                     </div>
                 </div>    
             </div>

@@ -105,8 +105,8 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .header {
-    padding-top: 12rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     text-align: center;
 }
 
@@ -119,7 +119,14 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     width: 100%;
     height: 600px;
 }
-    
+
+@media (max-width: 750px) {    
+    .header-with-image {
+        height:300px;
+    }
+}
+
+
 .header-content {
     position: absolute;
     top: 0;
@@ -137,11 +144,16 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .header-cta-title {
+    color:white;
+}
+
+.header-cta-subheader {
+    font-size: 2rem;
+    font-weight: 400;
     color:white;
 }
 
@@ -151,6 +163,13 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
         padding-right: 2rem;
     }
 }
+
+@media (min-width: 750px) {
+    .header-cta-portfolio-entry {
+        text-align: left;
+    }
+}
+
 
 
 /* Portfolio items grid
@@ -267,29 +286,12 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /* Portfolio entry (GTR website)
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.portfolio-entry-subheader {
-    font-size: 2rem;
-    text-align: left;
-    font-weight: 400;
-    color: #fff;
-    padding-top:0;
-    padding-left:5rem;
-}
 
-.portfolio-entry-title {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: left;
-    width: 100%;
-    color: #fff;
-    padding-left:5rem;
 
-}
 
-.portfolio-item-description {  
+/*.portfolio-item-section {  
     padding-top: 5rem;
     padding-bottom: 4rem; 
-    float: left;
 }
 
 .portfolio-item-subhead {
@@ -314,34 +316,52 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 .left-align-link:hover a {
     color: #666666;
-}
+}*/
 
-.portfolio-item-image {
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 600px;
-}
 
 /*About page - personal statement section
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.about-statement {
+.page-section{
     padding-left: 6rem; 
     padding-right: 6rem;   
     padding-top: 5rem;
     padding-bottom: 4rem; 
 }
 
-.about-statement-subhead {
+@media (max-width: 750px) {
+    .page-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+.page-section-left-aligned{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*> means that every child after that particular parent will be affected. this reduces extra classes creation*/
+.page-section-left-aligned > .page-section-header {
+    text-align: left;
+}
+
+.page-section-left-aligned > .page-section-content {
+    text-align: left;
+}
+
+.page-section-left-aligned > .page-section-link {
+    float: left;
+}
+
+.page-section-content {
     font-size: 2rem;
     text-align: center;
     font-weight: 400;
 }
 
-.about-statement-content {
+.page-section-header {
     text-align: center;
 
 }
@@ -354,14 +374,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     width: 100%;
 }
 
-@media (max-width: 750px) {
-    .about-statement {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-.view-my-work a{
+.page-section-link a{
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
@@ -370,7 +383,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display:block;
 }
 
-.view-my-work:hover a {
+.page-section-link:hover a {
     color: #666666;
 }
 
@@ -584,5 +597,10 @@ p, h5, h6 {
     height: 100%;
 }
 
+/* Figures
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-
+.figure-full-bleed {
+    margin: 0;
+    width: 100%;
+}
