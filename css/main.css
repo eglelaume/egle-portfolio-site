@@ -127,6 +127,15 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     }
 }
 
+.header-scrim {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
 
 .header-content {
     position: absolute;
@@ -176,10 +185,23 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /* Portfolio items grid
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .section-heading {
-    padding-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8rem;
     text-align: center;
     color: #202020;
+    /*border-bottom: 1px solid #ddd;
+    line-height: 0;*/
+    font-size: 2.4rem;
+    text-decoration: overline;
+
 }
+
+
+/*h5 span {
+    background: #fff;
+    padding: 0 15px;
+}*/
+
 
 .portfolio-grid-item {
     position: relative;
@@ -239,7 +261,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 
 .grid-item-header:hover {
-    background-color: rgba(0, 15, 44, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(2) {
     opacity: 0;
@@ -326,8 +348,8 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 .page-section{
     padding-left: 6rem; 
     padding-right: 6rem;   
-    padding-top: 5rem;
-    padding-bottom: 4rem; 
+    padding-top: 8rem;
+    padding-bottom: 8rem; 
 }
 
 @media (max-width: 750px) {
