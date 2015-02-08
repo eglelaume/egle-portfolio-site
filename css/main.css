@@ -8,7 +8,7 @@
 
 .navbar-list {
     list-style-type: none;
-    padding-top: 0.8rem;
+    padding-top: 1.2rem;
     display:inline-block;
     float:right;
     margin:0;
@@ -89,7 +89,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     .show-menu {
         display: inline-block;
         float: right;
-        margin-top: 1.5rem;
+        margin-top: 2.1rem;
 
         
     }
@@ -192,8 +192,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     /*border-bottom: 1px solid #ddd;
     line-height: 0;*/
     font-size: 2.4rem;
-    text-decoration: overline;
-
 }
 
 
@@ -202,6 +200,10 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     padding: 0 15px;
 }*/
 
+.image-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 .portfolio-grid-item {
     position: relative;
@@ -289,6 +291,12 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     }
     .columns.portfolio-grid-item-wrap:first-child {
         margin-left: 0; 
+    }
+}
+
+@media (max-width: 550px) {
+    .four.columns.portfolio-grid-item {
+        height: 50%;
     }
 }
 
@@ -409,6 +417,9 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 .panel {
     background-color: rgba(224, 224, 224, 0.62);
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+
 }
 
 .panel-full-width {
@@ -432,8 +443,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .about-skills-content {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    
 }
 
 .skills-item {
@@ -510,8 +520,9 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 .footer-social-container{
     background: #333333;
-    padding-top: 5.5rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 8rem;
 }
 
 .footer-copyright-container {
