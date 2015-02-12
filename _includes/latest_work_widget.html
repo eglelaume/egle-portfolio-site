@@ -1,7 +1,7 @@
  <div class="row image-grid">
  	{% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
     {% for entry in entries limit:3 %} 
-        <div class="four columns">
+        <div class="four columns portfolio-grid-item-wrap">
            {% include portfolio_grid_item.html entry=entry %}
         </div>
     {% endfor %}

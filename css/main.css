@@ -198,8 +198,8 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /*h5 span {
     background: #fff;
     padding: 0 15px;
-}*/
-
+}
+*/
 .image-grid {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -242,6 +242,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     padding: 50%;
     overflow: hidden;
 }
+
 
 .grid-item-image {
     position: absolute;
@@ -286,7 +287,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
         width: 31.33333333333333%;
     }
     .columns.portfolio-grid-item-wrap {
-        margin-left: 2%; 
+        margin-left: 3%; 
         margin-bottom: 2%;
     }
     .columns.portfolio-grid-item-wrap:first-child {
@@ -295,9 +296,37 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 @media (max-width: 550px) {
-    .four.columns.portfolio-grid-item {
+  /*  .grid-item-image {
         height: 50%;
+        margin: 0;
     }
+ 
+    .grid-item-header-wrap {
+        height: 50%;
+    }*/
+    .grid-item-image-expand {
+        padding: 25%;
+    }
+
+    .grid-item-header {
+    background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .grid-item-header-title {
+    color: white;
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    }
+
+    .portfolio-grid-item-wrap:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+
+
 }
 
 .see-more a{
@@ -354,21 +383,24 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .page-section{
-    padding-left: 6rem; 
-    padding-right: 6rem;   
+    padding-left: 16rem; 
+    padding-right: 16rem;   
     padding-top: 8rem;
     padding-bottom: 8rem; 
 }
 
-@media (max-width: 750px) {
+
+@media (max-width: 1000px) {
     .page-section {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
 }
 
 
-.page-section-left-aligned{
+
+.page-section-left-aligned {
     padding-left: 0;
     padding-right: 0;
 }
@@ -389,7 +421,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 
 @media (min-width: 750px) {
-    /*> means that every child after that particular parent will be affected. this reduces extra classes creation*/
+    /* ">" means that every child after that particular parent will be affected. this reduces extra classes creation*/
     .page-section-left-aligned > .page-section-header {
         text-align: left;
     }
@@ -415,6 +447,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 }
 
+
 .panel {
     background-color: rgba(224, 224, 224, 0.62);
     padding-top: 5rem;
@@ -427,16 +460,21 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 .page-section-link a{
+    text-decoration: none;
     font-size: 2rem;
     font-weight: 400;
-    text-decoration: none;
+    border-bottom: 1px solid #64c9dc;
     text-align: center;
     color: #64c9dc;
-    display:block;
+}
+
+.page-section-link {
+    text-align: center;
 }
 
 .page-section-link:hover a {
     color: #666666;
+    border-bottom: 1px solid #666666;
 }
 
 /* About page - skills section 
@@ -513,7 +551,24 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     font-weight: 400;
 }
 
+.line-separator {
+    height:1px;
+    background:#717171;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+}
 
+.page-section.project-explanation {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+}
+
+
+.last-figure {
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+}
 
 /*Footer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -655,4 +710,10 @@ p, h5, h6 {
 .figure-full-bleed {
     margin: 0;
     width: 100%;
+}
+
+.u-full-width.figure-container {
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+
 }
