@@ -573,27 +573,27 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /*Footer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.footer-social-container{
+.footer-social-container {
     background: #333333;
     padding-top: 10rem;
     padding-bottom: 10rem;
     margin-top: 8rem;
+    background-image: url(/artwork/stardust.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
 }
 
-.footer-copyright-container {
-    background: #000;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
 
-.footer-logo a {
+
+.footer-copyright-text {
     text-align: center;
     display: block;
     margin: 0;
-    padding-top: 0.5rem;
+    padding-top: 5rem;
     padding-bottom: 0rem;
     text-decoration: none;
-    color: #fff;
+    color: #c0c0c0;
 }
 
 .footer-list {
@@ -717,3 +717,13 @@ p, h5, h6 {
     margin-bottom: 10rem;
 
 }
+
+
+.half-column {
+    width: 50%;
+}
+
+.b {
+    display: block;
+    
+    }   
