@@ -346,6 +346,9 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 /* Portfolio entry (GTR website)
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+.mobile-singles {
+    padding:20px;
+}
 
 
 
@@ -712,12 +715,16 @@ p, h5, h6 {
     width: 100%;
 }
 
-.u-full-width.figure-container {
+.figure-container {
     margin-top: 0rem;
     margin-bottom: 10rem;
 
 }
 
+
+.u-full-width {
+
+}
 
 .half-column {
     width: 50%;
