@@ -351,6 +351,11 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 
+.color-fill {
+    background-color: #666666;
+}
+
+
 
 /*.portfolio-item-section {  
     padding-top: 5rem;
@@ -563,7 +568,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 .page-section.project-explanation {
-    padding-top: 0rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
