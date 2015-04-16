@@ -133,7 +133,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -463,6 +463,13 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 }
 
+.panel-color {
+    background-color: #79a6ab;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+
+}
+
 .panel-full-width {
     width: 100%;
 }
@@ -724,7 +731,7 @@ p, h5, h6 {
 
 .figure-container {
     margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 10rem;
 
 }
 
