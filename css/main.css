@@ -350,6 +350,10 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     padding:20px;
 }
 
+.tablet-singles {
+    padding:20px;
+}
+
 
 .color-fill {
     background-color: #666666;
@@ -393,8 +397,8 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 .page-section{
     padding-left: 16rem; 
     padding-right: 16rem;   
-    padding-top: 8rem;
-    padding-bottom: 8rem; 
+    padding-top: 10rem;
+    padding-bottom: 10rem; 
 }
 
 
@@ -463,8 +467,24 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 }
 
-.panel-color {
+.panel-color-turquoise {
     background-color: #79a6ab;
+
+}                 
+
+.panel-color-light-blue {
+    background-color: #acc6d3;
+
+}  
+
+
+.panel-color-grey {
+    background-color: #f0f0f0;
+
+}
+
+.panel-color-white {
+    background-color: #ffffff;
     padding-top: 5rem;
     padding-bottom: 6rem;
 
@@ -490,6 +510,13 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 .page-section-link:hover a {
     color: #666666;
     border-bottom: 1px solid #666666;
+}
+
+.page-section-link-unclickable {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
 }
 
 /* About page - skills section 
@@ -574,7 +601,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     margin-bottom: 10rem;
 }
 
-.page-section.project-explanation {
+.project-explanation {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
@@ -592,7 +619,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     background: #333333;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    margin-top: 8rem;
     background-image: url(/artwork/stardust.png);
     background-repeat: repeat;
     width: 100%;
@@ -729,7 +755,7 @@ p, h5, h6 {
     width: 100%;
 }
 
-.figure-container {
+.image-with-margin-after {
     margin-top: 0rem;
     margin-bottom: 10rem;
 
@@ -738,6 +764,12 @@ p, h5, h6 {
 
 .u-full-width {
 
+}
+
+.image-full-width {
+    display:block;
+    width:100%;
+    box-sizing: border-box;
 }
 
 .half-column {
