@@ -4,3 +4,37 @@ layout: default
 <section class="">
     {{content}}
 </section>
+
+<div class="row image-grid">
+    {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
+
+    {% assign num_pages_show_other = 3 %}
+
+    {% for entry in entries %}
+        {% if entry.title == page.title %}
+            {% assign pi = forloop.index %}
+        {% endif %}
+    {% endfor %}
+
+    {% for entry in entries %}
+
+        {% assign l = forloop.length %}
+       
+        {% assign s = pi | plus:1 %}
+        {% if s > l %}
+            {% assign s = s | minus:l %}
+        {% endif %}
+
+        {% assign e = s | plus:num_pages_show_other | minus:1 %}
+        {% if e > l %}
+            {% assign e = e | minus:l %}
+        {% endif %}
+
+        {% if forloop.index >= s and forloop.index <= e %}
+            <div class="four columns portfolio-grid-item-wrap">
+                {% include portfolio_grid_item.html entry=entry %}
+            </div>
+        {% endif %}
+        
+    {% endfor %}
+</div>
