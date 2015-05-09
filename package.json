@@ -1,0 +1,33 @@
+{
+  "name": "egle-portfolio-site",
+  "version": "1.0.0",
+  "description": "Portfolio of Egle Strockyte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eglelaume/egle-portfolio-site.git"
+  },
+  "keywords": [
+    "portfolio",
+    "jekyll",
+    "static",
+    "design"
+  ],
+  "author": "eglelaume <egle.strockyte@gmail.com>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/eglelaume/egle-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/eglelaume/egle-portfolio-site",
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^3.8.11",
+    "gulp-image-resize": "^0.6.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-rimraf": "^0.1.1",
+    "imagemin-pngquant": "^4.1.0"
+  }
+}

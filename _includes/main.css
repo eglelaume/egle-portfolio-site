@@ -83,7 +83,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     }
     .navbar-list {
         display: none;
-        width: 100%; 
+        width: 100%;
     }
 
     .show-menu {
@@ -91,7 +91,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
         float: right;
         margin-top: 2.1rem;
 
-        
+
     }
 
     .navbar-logo {
@@ -116,7 +116,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 .nav-pager-button-wrap {
-    display: table-cell; 
+    display: table-cell;
     vertical-align: middle;
 }
 
@@ -134,7 +134,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 .nav-pager-left {
-    text-align: left; 
+    text-align: left;
 }
 
 .nav-pager-right {
@@ -145,7 +145,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 
 
-/* Header image with text 
+/* Header image with text
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .header {
@@ -165,7 +165,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 }
 
-@media (max-width: 750px) {    
+@media (max-width: 750px) {
     .header-with-image {
         height:300px;
     }
@@ -198,7 +198,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .header-cta-title {
@@ -333,7 +333,7 @@ h5 span {
     opacity: 0;
 }
 .portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(1) {
-   
+
 }
 
 .portfolio-grid-item:hover .grid-item-header-title {
@@ -350,11 +350,11 @@ h5 span {
         width: 31.33333333333333%;
     }
     .columns.portfolio-grid-item-wrap {
-        margin-left: 3%; 
+        margin-left: 3%;
         margin-bottom: 2%;
     }
     .columns.portfolio-grid-item-wrap:first-child {
-        margin-left: 0; 
+        margin-left: 0;
     }
 }
 
@@ -363,7 +363,7 @@ h5 span {
         height: 50%;
         margin: 0;
     }
- 
+
     .grid-item-header-wrap {
         height: 50%;
     }*/
@@ -424,9 +424,9 @@ h5 span {
 
 
 
-/*.portfolio-item-section {  
+/*.portfolio-item-section {
     padding-top: 5rem;
-    padding-bottom: 4rem; 
+    padding-bottom: 4rem;
 }
 
 .portfolio-item-subhead {
@@ -458,10 +458,10 @@ h5 span {
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .page-section{
-    padding-left: 16rem; 
-    padding-right: 16rem;   
+    padding-left: 16rem;
+    padding-right: 16rem;
     padding-top: 10rem;
-    padding-bottom: 10rem; 
+    padding-bottom: 10rem;
 }
 
 
@@ -540,12 +540,12 @@ h5 span {
 .panel-color-turquoise {
     background-color: #8fb8bd;
 
-}                 
+}
 
 .panel-color-light-blue {
     background-color: #acc6d3;
 
-}  
+}
 
 .panel-color-salad-green {
     background-color: #cbd443;
@@ -561,7 +561,7 @@ h5 span {
 .panel-color-blue {
     background-color: #00649c;
 
-}   
+}
 
 
 .panel-color-grey {
@@ -605,11 +605,11 @@ h5 span {
     color: #666666;
 }
 
-/* About page - skills section 
+/* About page - skills section
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .about-skills-content {
-    
+
 }
 
 .skills-item {
@@ -641,7 +641,7 @@ h5 span {
     }
     .skills-item-subhead {
         font-size: 2rem;
-    }   
+    }
 }
 
 @media (max-width: 1000px) and (min-width: 750px) {
@@ -670,12 +670,12 @@ h5 span {
 
 .skills-item-title {
     text-align: center;
-    color: #202020;   
+    color: #202020;
     font-family: 'Montserrat', sans-serif;
 }
 
 .skills-item-subhead {
-    text-align: center;  
+    text-align: center;
     font-weight: 400;
 }
 
@@ -706,15 +706,12 @@ h5 span {
     margin-top: 5rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-image: url(/artwork/footer/bugs-pattern-transparent.png);
+    background-image: url('{{ site.images_path }}/footer/bugs-pattern-transparent.png)');
     background-repeat: repeat;
     background-size: 400px 400px;
     width: 100%;
     height: 100%;
 }
-
-
-
 
 .footer-copyright-text {
     text-align: center;
@@ -816,15 +813,15 @@ p, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
 
-h3 { 
-    font-size: 3.0rem; 
-    line-height: 1.3;  
+h3 {
+    font-size: 3.0rem;
+    line-height: 1.3;
     letter-spacing: -.1rem;
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h3 { font-size: 3.5rem; 
+  h3 { font-size: 3.5rem;
 
   }
 }
@@ -850,7 +847,7 @@ h3 {
     height: 0;
     overflow: hidden;
 }
- 
+
 .embed iframe,
 .embed object,
 .embed embed {
@@ -895,4 +892,4 @@ h3 {
 
 .b {
     display: block;
-}   
+}

@@ -1,14 +1,13 @@
-<a href="{{ entry.url }}" class="portfolio-grid-item"> 
+<a href="{{ entry.url }}" class="portfolio-grid-item">
     <div class="grid-item-image-wrap">
         <div class="grid-item-image-expand">
-            <div class="grid-item-image" style="background-image: url('{{ entry.thumb_alt }}')"></div>
-            <div class="grid-item-image" style="background-image: url('{{ entry.thumb_main }}')"></div>
+            <div class="grid-item-image" style="background-image: url('{{ site.images_path }}{{ entry.thumb_alt }}')"></div>
+            <div class="grid-item-image" style="background-image: url('{{ site.images_path }}{{ entry.thumb_main }}')"></div>
         </div>
     </div>
-    <!-- <img class="grid-item-image u-max-full-width" src="{{ entry.thumb }}"/> -->
     <div class="grid-item-header-wrap">
         <div class="grid-item-header">
-            <h6 class="grid-item-header-title">{{ entry.title }}</h6>      
+            <h6 class="grid-item-header-title">{{ entry.title }}</h6>
         </div>
-    </div>   
+    </div>
 </a>
