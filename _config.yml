@@ -2,3 +2,7 @@ collections:
     portfolio_entries:
         output: true
         permalink: /portfolio/:path/
+
+exclude: ["artwork", "node_modules", "gulpfile.js", "package.json"]
+
+images_path: "/images"
