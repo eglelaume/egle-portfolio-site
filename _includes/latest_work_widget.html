@@ -12,7 +12,7 @@
     {% for entry in entries %}
 
         {% assign l = forloop.length %}
-       
+
         {% assign s = pi | plus:1 %}
         {% if s > l %}
             {% assign s = s | minus:l %}
@@ -28,6 +28,6 @@
                 {% include portfolio_grid_item.html entry=entry %}
             </div>
         {% endif %}
-        
+
     {% endfor %}
 </div>

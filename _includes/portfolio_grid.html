@@ -1,7 +1,7 @@
-<div class="portfolio-grid"> 
+<div class="portfolio-grid">
     {% assign loopindex = 0 %}
     {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
-    {% for entry in entries %}                       
+    {% for entry in entries %}
         {% assign loopindex = loopindex | plus: 1 %}
         {% assign rowfinder = loopindex | modulo: 3 %}
         {% if rowfinder == 1 %}

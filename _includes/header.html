@@ -11,7 +11,7 @@
             <li class="navbar-item"><a href="/portfolio.html">Portfolio</a></li>
             <li class="navbar-item"><a href="/contact.html">Contact</a></li>
         </ul>
-    </div>                     
+    </div>
 </nav>
 
 {% if include.context != "portfolio" %}
@@ -24,13 +24,13 @@
                         <h1 class="header-cta-title">Hi! My name is Egle</h1>
                         <a class="button button-primary" href="/portfolio.html">View my portfolio</a>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
     {% endif %}
     {% if include.context == "portfolio_entry" %}
-    <section class="header header-with-image" style="background-image: url('{{ page.hero_image }}')">
+    <section class="header header-with-image" style="background-image: url('{{ site.images_path }}{{ page.hero_image }}')">
         <div class="header-scrim"></div>
         <nav class="nav-pager nav-pager-fixed">
         {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
@@ -58,7 +58,7 @@
                             <h1 class="header-cta-title">{{page.title}}</h1>
                             <h6 class="header-cta-subheader">{{page.abstract}}</h6>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
@@ -72,11 +72,11 @@
                         <h1 class="header-cta-title">Get in touch</h1>
                         <a class="button button-primary" href="mailto:egle.strockyte@gmail.com">Email me</a>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
-    {% endif %}  
+    {% endif %}
     {% if include.context == "about" %}
     <section class="header header-with-image">
         <div class="row">
@@ -86,13 +86,12 @@
                         <h1 class="header-cta-title">Hi! My name is Egle</h1>
                         <a class="button button-primary" href="">Download my CV</a>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
     {% endif %}
-{% endif %} 
+{% endif %}
 
 
 
-      
