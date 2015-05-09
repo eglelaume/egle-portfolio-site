@@ -9,15 +9,38 @@
             <div class="four columns portfolio-grid-item-wrap">
                 {% include portfolio_grid_item.html entry=entry %}
             </div>
+
+            {% if forloop.last %}
+            <div class="four columns portfolio-grid-item-wrap">
+               {% include contact_grid_item.html %}
+            </div>
+            {% endif %}
+
         {% elsif rowfinder == 0 %}
                 <div class="four columns portfolio-grid-item-wrap">
                     {% include portfolio_grid_item.html entry=entry %}
                 </div>
             </div>
+
+            {% if forloop.last %}
+            <div class="row">
+                <div class="four columns portfolio-grid-item-wrap">
+                   {% include contact_grid_item.html %}
+                </div>
+            </div>
+            {% endif %}
+
         {% else %}
             <div class="four columns portfolio-grid-item-wrap">
                {% include portfolio_grid_item.html entry=entry %}
             </div>
+
+            {% if forloop.last %}
+            <div class="four columns portfolio-grid-item-wrap">
+               {% include contact_grid_item.html %}
+            </div>
+            {% endif %}
+
         {% endif %}
     {% endfor %}
 </div>

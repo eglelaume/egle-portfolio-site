@@ -226,7 +226,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 
 .body-text-container.container{
-  max-width: 700px;
+    max-width: 700px;
 }
 
 
@@ -259,6 +259,7 @@ h5 span {
 .portfolio-grid-item {
     position: relative;
     display: block;
+    overflow: hidden;
     width: 100%;
     height: 100%;
 }
@@ -267,12 +268,23 @@ h5 span {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
+.grid-item-header-wrap:hover,
+.grid-item-header-wrap:active {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .grid-item-header {
     display: table;
-    width: 100%;
+    width: 65%;
+    margin: 0 auto;
     height: 100%;
 }
 
@@ -281,14 +293,16 @@ h5 span {
     vertical-align: middle;
     text-align: center;
     width: 100%;
-    color: transparent;
+    color: white;
+    opacity: 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 200;
+    line-height: 1.35em;
 
-     transition: transform .25s ease-in-out;
-    -moz-transition: transform .25s ease-in-out;
-    -webkit-transition: transform .25s ease-in-out;
+     transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
 }
 
 .grid-item-image-expand {
@@ -315,10 +329,6 @@ h5 span {
     -webkit-transition: opacity .25s ease-in-out;
 }
 
-
-.grid-item-header:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
 .portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(2) {
     opacity: 0;
 }
@@ -327,12 +337,12 @@ h5 span {
 }
 
 .portfolio-grid-item:hover .grid-item-header-title {
-    color:white;
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
+    opacity: 1;
 }
 
 @media (min-width: 550px) {
@@ -787,9 +797,9 @@ input[type="button"].button-form:focus {
 /*Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-  .contact-form {
-    padding-top: 4rem;
-  }
+.contact-form {
+    padding-top: 6em;
+}
 
 
 /* Skeleton overwrites
@@ -871,11 +881,6 @@ h3 {
 
 }
 
-
-.u-full-width {
-
-}
-
 .image-full-width {
     display:block;
     width:100%;
@@ -888,5 +893,4 @@ h3 {
 
 .b {
     display: block;
-    
-    }   
+}   

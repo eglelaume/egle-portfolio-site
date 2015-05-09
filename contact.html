@@ -3,28 +3,16 @@ layout: default
 context: contact
 ---
 
-<section class="container">
-	<form class="contact-form">
+<section class="container body-text-container">
+	<form class="contact-form" action="https://formspree.io/egle.strockyte@gmail.com" method="POST">
 		<div class="row">
-			<div class="six columns">
-				<label for="exampleEmailInput">Your email</label>
-				<input class="u-full-width" type="email" placeholder="youremail@mailbox.com" id="exampleEmailInput">
-			</div>
-			<div class="six columns">
-				<label for="exampleRecipientInput">Reason for contacting</label>
-				<select class="u-full-width" id="exampleRecipientInput">
-					<option value="Option 1">Questions</option>
-					<option value="Option 2">Freelance work</option>
-					<option value="Option 3">Job interview</option>
-				</select>
-			</div>
+			<label for="contact-email">Your email</label>
+			<input class="u-full-width" type="email" placeholder="hello@mail.com" id="contact-email" name="email">			
 		</div>
-		<label for="exampleMessage">Message</label>
-		<textarea class="u-full-width" placeholder="Hi Egle …" id="exampleMessage"></textarea>
-		<label class="example-send-yourself-copy">
-			<input type="checkbox">
-			<span class="label-body">Send a copy to yourself</span>
-		</label>
+		<label for="contact-message">Message</label>
+		<textarea class="u-full-width" placeholder="Hi Egle …" id="contact-message" name="message"></textarea>
+		<input type="text" name="_gotcha" style="display:none" />
+		<!-- <input type="hidden" name="_next" value="http://localhost:4000/about.html" /> -->
 		<input class="button button-form" type="submit" value="Submit">
 	</form>
 </section>
