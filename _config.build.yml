@@ -1,0 +1,3 @@
+exclude: ["artwork", "node_modules", "gulpfile.js", "package.json"]
+
+images_path: "/images"

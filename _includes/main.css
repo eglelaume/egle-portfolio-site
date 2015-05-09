@@ -706,7 +706,7 @@ h5 span {
     margin-top: 5rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-image: url('{{ site.images_path }}/footer/bugs-pattern-transparent.png)');
+    background-image: url('{{ site.images_path }}/footer/bugs-pattern-transparent.panel-color-grey');
     background-repeat: repeat;
     background-size: 400px 400px;
     width: 100%;
