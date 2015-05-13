@@ -23,7 +23,13 @@
             {% assign e = e | minus:l %}
         {% endif %}
 
-        {% if forloop.index >= s and forloop.index <= e %}
+        <!-- HELP THIS IS CRAZY !!! -->
+        {% assign m = s | plus:1 %}
+        {% if m > l %}
+            {% assign m = m | minus: (l | minus: 1) %}
+        {% endif %}
+
+        {% if forloop.index == s or forloop.index == m or forloop.index == e %}
             <div class="four columns portfolio-grid-item-wrap">
                 {% include portfolio_grid_item.html entry=entry %}
             </div>

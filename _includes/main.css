@@ -378,38 +378,46 @@ h5 span {
     .grid-item-header-wrap {
         height: 50%;
     }*/
+
+
     .grid-item-image-expand {
-    padding: 25%;
-}
+        padding: 25%;
+    }
+
+    .grid-item-image-expand-full {
+        padding: 50%;
+    }
 
     .grid-item-header-wrap {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-    .grid-item-image-expand > .grid-item-image:nth-child(2) {
-    opacity: 0;
-}
+    .grid-item-image-expand > .grid-item-image:nth-child(1) {
+        opacity: 0;
+    }
+
+    .portfolio-grid-item:hover .grid-item-image-expand > .grid-item-image:nth-child(2) {
+        opacity: 1;
+    }
 
     .grid-item-header-title {
-    color: white;
-    opacity:1;
-    font-size: 12px;
-    -moz-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-}
+        color: white;
+        opacity:1;
+        font-size: 12px;
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+    }
 
     .portfolio-grid-item-wrap {
         margin-bottom: 2rem;
     }
 
     .grid-item-image {
-    background-position: 25% 30%;
-}
-
-
+        background-position: 25% 30%;
+    }
 }
 
 .see-more a{
@@ -722,11 +730,10 @@ h5 span {
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .footer-social-container {
-    background: #333333;
+    background: #001c3c;
     margin-top: 5rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-image: url('{{ site.images_path }}/footer/bugs-pattern-transparent.png');
     background-repeat: repeat;
     background-size: 800px 800px;
     width: 100%;
