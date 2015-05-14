@@ -167,12 +167,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 .header-with-image-contact {
     background-image: url('{{ site.images_path }}/contact/main-header-2-alt.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 600px;
 }
 
 @media (max-width: 750px) {
