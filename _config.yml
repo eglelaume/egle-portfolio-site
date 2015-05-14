@@ -3,6 +3,6 @@ collections:
         output: true
         permalink: /portfolio/:path/
 
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["artwork", "node_modules", "gulpfile.js", "package.json", "*.log"]
 
-images_path: "/artwork"
+images_path: "/images"
