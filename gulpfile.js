@@ -7,31 +7,31 @@ var parallel = require("concurrent-transform");
 var os = require("os");
 
 gulp.task('clean', function() {
-    return gulp.src('./images/*').pipe(rm());
+    return gulp.src('./dist/images/*').pipe(rm());
 });
 
 gulp.task('copy', ['clean'], function() {
-    return gulp.src('./artwork/**/*')
-        .pipe(gulp.dest('./images'));
+    return gulp.src('./src/artwork/**/*')
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('imageresize', ['copy'], function () {
-    return gulp.src('./images/**/*.{jpg,png}')
+    return gulp.src('./dist/images/**/*.{jpg,png}')
         .pipe(parallel(
             imageResize({ width : 2880 }),
             os.cpus().length
         ))
-        .pipe(gulp.dest('./images'));
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('imagemin', ['imageresize'], function () {
-    return gulp.src('./images/**/*')
+    return gulp.src('./dist/images/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('./images'));
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('build', ['clean', 'copy', 'imageresize', 'imagemin']);
