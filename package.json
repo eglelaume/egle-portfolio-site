@@ -29,5 +29,8 @@
     "gulp-imagemin": "^2.2.1",
     "gulp-rimraf": "^0.1.1",
     "imagemin-pngquant": "^4.1.0"
+  },
+  "scripts": {
+    "build" : "./node_modules/.bin/gulp build; jekyll build --config _config.yml;"
   }
 }
