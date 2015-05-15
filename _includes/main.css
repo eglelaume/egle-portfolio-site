@@ -813,6 +813,18 @@ input[type="button"].button-form:focus {
     border-color: #000;
 }
 
+.button-blue {
+    color: #001c3c;
+    background-color: transparent;
+    border-color: #001c3c; 
+}
+
+.button.button-blue:hover {
+    color: #fff;
+    background-color: #001c3c;
+    border-color: #001c3c
+
+}
 
 /*Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
