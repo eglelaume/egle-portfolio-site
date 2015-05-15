@@ -1,8 +1,14 @@
+source: src
+
+destination: dist
+
 collections:
     portfolio_entries:
         output: true
         permalink: /portfolio/:path/
 
-exclude: ["artwork", "node_modules", "gulpfile.js", "package.json", "*.log"]
+exclude: ["artwork"]
+
+keep_files: ["images"]
 
 images_path: "/images"
