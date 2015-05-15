@@ -75,7 +75,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 }
 
-
 @media (max-width: 610px) {
     .navbar-item {
         display: block;
