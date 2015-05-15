@@ -2,8 +2,6 @@
 *.sublime-project
 *.sublime-workspace
 
-# jekyll
-_site
 
 # Node
 node_modules
