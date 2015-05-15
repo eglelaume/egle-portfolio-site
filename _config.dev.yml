@@ -1,3 +1,3 @@
-exclude: []
+exclude: ["images", "node_modules", "gulpfile.js", "*.log", "package.json"]
 
 images_path: "/artwork"
