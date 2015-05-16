@@ -175,6 +175,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: block;
     width: 100%;
     height: 600px;
+    height: 55vh;
 
 }
 
@@ -185,6 +186,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 @media (max-width: 750px) {
     .header-with-image {
         height:300px;
+        height: 30vh;
     }
 }
 
