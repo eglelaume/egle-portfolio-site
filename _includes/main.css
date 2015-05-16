@@ -949,6 +949,12 @@ h3 {
 
 }
 
+@media (max-width: 750px) {
+   .image-with-margin-after {
+        margin-bottom: 4em;
+   } 
+}
+
 .image-full-width {
     display:block;
     width:100%;
