@@ -511,29 +511,48 @@ h5 span {
 
 }
 
+.page-section-header {
+    text-align: center;
+}
 
 
 .page-section-left-aligned {
     padding-left: 0;
     padding-right: 0;
     text-align: left;
-
 }
 
 @media (max-width: 550px) {
     .page-section-left-aligned > .page-section-header {
         padding-left: 2rem;
         padding-right: 2rem;
-        text-align: center;
+        text-align: left;
     }
 
-     .page-section-left-aligned > .page-section-content {
+    .page-section-left-aligned > .page-section-content {
         padding-left: 2rem;
         padding-right: 2rem;
-        text-align: center;
+    }
+
+    .page-section-left-aligned > .page-section-link  {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .page-section-link {
+        float: left;
     }
 }
 
+@media (max-width: 750px) {
+    .page-section-header {
+        text-align: left;
+    }
+}
+
+.page-section-left-aligned > .page-section-link {
+    float: left;
+}
 
 @media (min-width: 750px) {
     /* ">" means that every child after that particular parent will be affected. this reduces extra classes creation*/
@@ -544,24 +563,19 @@ h5 span {
     .page-section-left-aligned > .page-section-content {
         text-align: left;
     }
-
-    .page-section-left-aligned > .page-section-link {
-        float: left;
-    }
 }
-
 
 .page-section-content {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     font-weight: 400;
 }
 
-.page-section-header {
-    text-align: center;
-
+@media (min-width: 750px) {
+    .page-section-content-centered-large {
+        text-align: center;
+    }
 }
-
 
 .panel {
     background-color: rgba(224, 224, 224, 0.62);
@@ -616,15 +630,13 @@ h5 span {
     width: 100%;
 }
 
-.page-section-link a{
+.page-section-link a {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
     border-bottom: 1px solid #64c9dc;
-    text-align: center;
     color: #64c9dc;
-
 }
 
 .page-section-link {
