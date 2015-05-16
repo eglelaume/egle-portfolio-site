@@ -909,6 +909,22 @@ h3 {
     height: 100%;
 }
 
+.rwd-line {
+    display: inline;
+}
+
+@media (max-width: 550px) {
+    .rwd-line {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .hide-small {
+        display: none;
+    }
+}
+
 /* Figures
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
