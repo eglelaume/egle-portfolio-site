@@ -541,7 +541,7 @@ h5 span {
         padding-right: 2rem;
     }
 
-    .page-section-link {
+    .page-section-link a {
         float: left;
     }
 }
@@ -633,11 +633,11 @@ h5 span {
 
 .page-section-link a {
     text-decoration: none;
-    font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
     border-bottom: 1px solid #64c9dc;
     color: #64c9dc;
+    font-size: 1.5rem;
 }
 
 .page-section-link {
