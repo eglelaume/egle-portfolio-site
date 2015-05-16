@@ -566,7 +566,6 @@ h5 span {
 }
 
 .page-section-content {
-    font-size: 2rem;
     text-align: left;
     font-weight: 400;
 }
@@ -871,6 +870,13 @@ input[type="button"].button-form:focus {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+@media(max-width: 550px) {
+    body {
+        font-size: 1.5rem;
+    }
 }
 
 p, h5, h6 {
@@ -886,8 +892,8 @@ h3 {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h3 { font-size: 3.5rem;
-
+  h3 { 
+    font-size: 3.5rem;
   }
 }
 
