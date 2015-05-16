@@ -8,7 +8,8 @@
 
 .navbar-list {
     list-style-type: none;
-    padding-top: 1.2rem;
+    padding-top: 1em;
+    padding-bottom: 2em;
     display:inline-block;
     float:right;
     margin:0;
@@ -815,7 +816,7 @@ input[type="button"].button-form:focus {
 .button-blue {
     color: #001c3c;
     background-color: transparent;
-    border-color: #001c3c; 
+    border-color: #001c3c;
 }
 
 .button.button-blue:hover {
