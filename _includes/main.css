@@ -63,7 +63,10 @@
     cursor: pointer;
 }
 
-.show-menu:before { content:'\2630'; }
+.show-menu:before {
+    content:'\2261';
+    font-size: 2em;
+}
 
 /*Hide checkbox*/
 input.menu-toggle[type=checkbox]{
@@ -81,6 +84,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
         display: block;
         width: 100%;
     }
+
     .navbar-list {
         display: none;
         width: 100%;
@@ -89,9 +93,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     .show-menu {
         display: inline-block;
         float: right;
-        margin-top: 2.1rem;
-
-
+        margin-top: 0.5em;
     }
 
     .navbar-logo {
