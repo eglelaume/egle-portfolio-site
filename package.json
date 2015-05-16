@@ -31,6 +31,7 @@
     "imagemin-pngquant": "^4.1.0"
   },
   "scripts": {
-    "build" : "./node_modules/.bin/gulp build; jekyll build --config _config.yml;"
+    "build" : "./node_modules/.bin/gulp build; jekyll build --config _config.yml;",
+    "dev": "jekyll serve --config _config.yml,_config.dev.yml;"
   }
 }

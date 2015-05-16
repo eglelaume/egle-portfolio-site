@@ -8,13 +8,20 @@
 
 .navbar-list {
     list-style-type: none;
-    padding-top: 1.2rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display:inline-block;
     float:right;
     margin:0;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.625rem;
+}
+
+@media (max-width: 610px) {
+    .navbar-list {
+        padding-bottom: 2em;
+    }
 }
 
 .navbar-logo {
@@ -62,7 +69,10 @@
     cursor: pointer;
 }
 
-.show-menu:before { content:'\2630'; }
+.show-menu:before {
+    content:'\2261';
+    font-size: 2em;
+}
 
 /*Hide checkbox*/
 input.menu-toggle[type=checkbox]{
@@ -80,6 +90,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
         display: block;
         width: 100%;
     }
+
     .navbar-list {
         display: none;
         width: 100%;
@@ -88,9 +99,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     .show-menu {
         display: inline-block;
         float: right;
-        margin-top: 2.1rem;
-
-
+        margin-top: 0.5em;
     }
 
     .navbar-logo {
@@ -124,12 +133,20 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     margin-left: 0.5em;
     margin-right: 0.5em;
     color: rgba(250, 250, 250, 0.5);
-
 }
 
 .nav-pager-button:hover {
     color: rgb(250, 250, 250);
+}
 
+.nav-pager-button-with-icon {
+    font-size: 3em !important;
+}
+
+@media (max-width: 550px) {
+    .nav-pager-button-with-icon {
+        font-size: 2em !important;
+    }
 }
 
 .nav-pager-left {
@@ -139,9 +156,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 .nav-pager-right {
     text-align: right;
 }
-
-
-
 
 
 /* Header image with text
@@ -161,6 +175,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     display: block;
     width: 100%;
     height: 600px;
+    height: 55vh;
 
 }
 
@@ -171,6 +186,7 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 @media (max-width: 750px) {
     .header-with-image {
         height:300px;
+        height: 30vh;
     }
 }
 
@@ -181,14 +197,15 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-
 }
 
 .header-content {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%
+    width: 100%;
 }
 
 .header-cta-wrap {
@@ -216,8 +233,8 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 
 @media (max-width: 750px) {
     .header-cta {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 3em;
+        padding-right: 3em;
     }
 }
 
@@ -815,15 +832,19 @@ input[type="button"].button-form:focus {
 .button-blue {
     color: #001c3c;
     background-color: transparent;
-    border-color: #001c3c; 
+    border-color: #001c3c;
 }
 
 .button.button-blue:hover {
     color: #fff;
     background-color: #001c3c;
     border-color: #001c3c
-
 }
+
+.button {
+    padding-top: 2px;
+}
+
 
 /*Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -896,6 +917,22 @@ h3 {
 
 .u-full-height {
     height: 100%;
+}
+
+.rwd-line {
+    display: inline;
+}
+
+@media (max-width: 550px) {
+    .rwd-line {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .hide-small {
+        display: none;
+    }
 }
 
 /* Figures

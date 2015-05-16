@@ -1,7 +1,7 @@
 collections:
     portfolio_entries:
         output: true
-        permalink: /portfolio/:path/
+        permalink: /portfolio/:title/
 
 exclude: ["artwork", "node_modules", "gulpfile.js", "*.log", "package.json"]
 

@@ -1,15 +1,15 @@
  <nav class="u-max-full-width ">
     <div class="container navbar-container">
         <div class="navbar-logo">
-            <a href="/index.html">egle strockyte</a>
+            <a href="/">egle strockyte</a>
         </div>
 
         <label for="show-menu" class="show-menu"></label>
         <input class="menu-toggle" type="checkbox" id="show-menu" role="button">
 
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="/portfolio.html">Portfolio</a></li>
-            <li class="navbar-item"><a href="/contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="/portfolio">Portfolio</a></li>
+            <li class="navbar-item"><a href="/contact">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -22,7 +22,7 @@
                 <div class="header-cta-wrap">
                     <div class="header-cta">
                         <h1 class="header-cta-title">Hi! My name is Egle</h1>
-                        <a class="button button-primary" href="/portfolio.html">View my portfolio</a>
+                        <a class="button button-primary" href="/portfolio">View my portfolio</a>
                     </div>
                 </div>
             </div>
@@ -32,25 +32,6 @@
     {% if include.context == "portfolio_entry" %}
     <section class="header header-with-image" style="background-image: url('{{ site.images_path }}{{ page.hero_image }}')">
         <div class="header-scrim"></div>
-        <nav class="nav-pager nav-pager-fixed">
-        {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
-        {% for entry in entries %}
-            {% if entry.title == page.title %}
-                {% unless forloop.first %}
-                    <div class="nav-pager-left nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ prev.url }}"><i class="nav-pager-button fa fa-3x fa-chevron-left"></i></a>
-                     </div>
-                {% endunless %}
-                {% unless forloop.last %}
-                    {% assign next = entries[forloop.index] %}
-                     <div class="nav-pager-right nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ next.url }}"><i class="nav-pager-button fa fa-3x fa-chevron-right"></i></a>
-                    </div>
-                {% endunless %}
-            {% endif %}
-            {% assign prev = entry %}
-        {% endfor %}
-        </nav>
         <div class="container body-text-container u-full-height">
             <div class="header-content">
                 <div class="header-cta-wrap">
@@ -61,6 +42,25 @@
                 </div>
             </div>
         </div>
+         <nav class="nav-pager nav-pager-fixed">
+        {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
+        {% for entry in entries %}
+            {% if entry.title == page.title %}
+                {% unless forloop.first %}
+                    <div class="nav-pager-left nav-pager-button-wrap">
+                        <a href="{{ site.baseurl }}{{ prev.url }}"><i class="fa fa-chevron-left nav-pager-button nav-pager-button-with-icon "></i></a>
+                     </div>
+                {% endunless %}
+                {% unless forloop.last %}
+                    {% assign next = entries[forloop.index] %}
+                     <div class="nav-pager-right nav-pager-button-wrap">
+                        <a href="{{ site.baseurl }}{{ next.url }}"><i class="fa nav-pager-button fa-chevron-right nav-pager-button-with-icon "></i></a>
+                    </div>
+                {% endunless %}
+            {% endif %}
+            {% assign prev = entry %}
+        {% endfor %}
+        </nav>
     </section>
     {% endif %}
     {% if include.context == "contact" %}
