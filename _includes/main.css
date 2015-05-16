@@ -150,9 +150,6 @@ input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
 }
 
 
-
-
-
 /* Header image with text
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
@@ -832,8 +829,12 @@ input[type="button"].button-form:focus {
     color: #fff;
     background-color: #001c3c;
     border-color: #001c3c
-
 }
+
+.button {
+    padding-top: 2px;
+}
+
 
 /*Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
