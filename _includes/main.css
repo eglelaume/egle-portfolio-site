@@ -510,6 +510,8 @@ h5 span {
 
 }
 
+
+
 .page-section-header {
     text-align: center;
 }
@@ -581,6 +583,13 @@ h5 span {
     padding-bottom: 6rem;
 
 }
+
+@media (max-width: 550px) {
+    .panel {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    }
 
 .panel-no-bottom {
     background-color: rgba(224, 224, 224, 0.62);
@@ -738,6 +747,12 @@ h5 span {
     padding-bottom: 10rem;
 }
 
+@media (max-width: 550px) {
+.project-explanation {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+}
 
 .last-figure {
     margin-top: 0rem;
