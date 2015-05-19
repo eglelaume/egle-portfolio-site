@@ -8,3 +8,6 @@ exclude: ["artwork", "node_modules", "gulpfile.js", "*.log", "package.json"]
 keep_files: ["images"]
 
 images_path: "/images"
+
+title: "Egle Strockyte - Graphic Designer"
+description: "I'm Egle Strockyte a London based graphic designer"
