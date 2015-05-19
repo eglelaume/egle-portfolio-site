@@ -1,9 +1,11 @@
 /* Navigation
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.navbar-container {
-  max-width: 100%;
-  background: #fff;
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    background: #fff;
+    box-sizing: border-box;
 }
 
 .navbar-list {
@@ -905,7 +907,7 @@ h3 {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h3 { 
+  h3 {
     font-size: 3.5rem;
   }
 }
@@ -983,7 +985,7 @@ h3 {
 @media (max-width: 750px) {
    .image-with-margin-after {
         margin-bottom: 4em;
-   } 
+   }
 }
 
 .image-full-width {
