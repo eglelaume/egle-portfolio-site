@@ -4,33 +4,14 @@
 .navbar {
     width: 100%;
     min-height: 80px;
-    background: #fff;
+    background: #000;
     box-sizing: border-box;
-}
 
-.navbar-list {
-    list-style-type: none;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    display:inline-block;
-    float:right;
-    margin:0;
-    font-weight: 400;
-    line-height: 0rem;
-}
-
-@media (max-width: 550px) {
-    .navbar-list {
-        padding-top: 0em;
-        padding-bottom: 1em;
-        line-height: 1.5rem;
-    }
 }
 
 .navbar-logo {
     display: inline-block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
     padding-left:0;
     float:left;
 }
@@ -38,50 +19,49 @@
 .navbar-logo a {
     text-align: left;
     text-decoration: none;
-    color: #000;
-    font-size: 24px;
-    letter-spacing: -0.125rem;
-    font-weight: 700;
+    color: #fff;
 }
 
+.logo-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; /* ms0 */
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 656px) {
+    .logo-title {
+      font-size: 1.728rem; /* ms5 */
+      line-height: 1.2;
+      letter-spacing: 0.08rem;
+      }
+}
+
+
+
+
 .navbar-item {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1em;
     display: inline-block;
-    float:left;
-    margin: 0;
-    font-size: 1.5rem;
+    float: right;
 }
 
 .navbar-item a {
-    display: block;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    padding: 2rem;
-    color: #000;
+    color: #fff;
 }
+
 
 .navbar-item:hover a {
     color: #64c9dc;
 
 }
 
-.show-menu {
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    padding: 1em;
-    padding-top: 2em;
-    display: none;
-    cursor: pointer;
-}
 
-/*Hide checkbox*/
-input.menu-toggle[type=checkbox]{
-    display: none;
-}
 
-/*Show menu when invisible checkbox is checked*/
-input.menu-toggle[type=checkbox]:checked ~ .navbar-list{
-    display: block;
 
 }
 
