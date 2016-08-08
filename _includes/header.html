@@ -13,20 +13,34 @@
 
 {% if include.context != "portfolio" %}
     {% if include.context == "home" %}
-    <section class="header header-with-image">
+    <section class="header container">
         <div class="row">
             <div class="twelve columns header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta">
-                        <h1 class="header-cta-title">Hi! My name is Egle</h1>
-                        <a class="button button-primary" href="/portfolio">View my portfolio</a>
-                    </div>
+                        <h1 class="header-cta-title">Hi, I am Egle /<span style="font-family: 'Merriweather', serif; font-style: italic; color: #B6B6B6; font-weight: 300">'ægle</span>/. I design delightful digital experiences. </h1>
+            </div>
+        </div>
+    </section>
+
+
+      <section class="entry-strip">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 class="solid-block">The Economist.</h3>
                 </div>
             </div>
         </div>
     </section>
+
     {% endif %}
     {% if include.context == "portfolio_entry" %}
+
+
+
+  
+
+
+
     <section class="header header-with-image" style="background-image: url('{{ site.images_path }}{{ page.hero_image }}')">
         <div class="header-scrim"></div>
         <div class="container body-text-container u-full-height">
