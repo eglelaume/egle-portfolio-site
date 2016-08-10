@@ -34,6 +34,10 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.728;
+    /* Better Font Rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -46,10 +50,12 @@ p {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.488rem; /* ms5 */
-  line-height: 1.2;
+  font-size: 2.074rem; /* ms5 */
+  line-height: 1.44;
   font-weight: 700;
 }
+
+
 
 @media screen and (min-width: 656px) {
     h1 {

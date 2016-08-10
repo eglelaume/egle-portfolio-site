@@ -1,5 +1,5 @@
 ---
 ---
 {% include normalize.css %}
-{% include skeleton.css %}
 {% include main.css %}
+{% include font-face.css %}

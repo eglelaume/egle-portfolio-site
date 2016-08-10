@@ -1,91 +1,33 @@
  <nav class="navbar">
     <div class="container">
-        <div class="navbar-logo logo-title">
-            <a href="/">egle</a>
+        <div class="row">
+            <div class="col-6 navbar-logo">
+                <a href="/">egle</a>
+            </div>
+            <div class="col-6 navbar-item">
+                <a href="/portfolio">About</a>
+            </div>
         </div>
-
-         <div class="navbar-item">
-            <a href="/portfolio">About</a>
-        </div>
-
     </div>
 </nav>
 
+
 {% if include.context != "portfolio" %}
     {% if include.context == "home" %}
-    <section class="header container">
-        <div class="row">
-            <div class="twelve columns header-content">
-                        <h1 class="header-cta-title">Hi, I am Egle /<span style="font-family: 'Merriweather', serif; font-style: italic; color: #B6B6B6; font-weight: 300">'ægle</span>/. I design delightful digital experiences. </h1>
-            </div>
-        </div>
-    </section>
 
 
-      <section class="entry-strip">
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns">
-                    <h3 class="solid-block">The Economist.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="intro-header">
+    <div class="container">
+        <h1 class="intro-greeting">Hi, I am Egle /<span style="font-family: 'Merriweather', serif; font-style: italic; color: #B6B6B6; font-weight: 300">'ægle</span>/. I design delightful digital experiences. </h1>
+    </div>
+</section>
+
+
 
     {% endif %}
-    {% if include.context == "portfolio_entry" %}
+{% endif %}
 
 
 
   
 
-
-
-    <section class="header header-with-image" style="background-image: url('{{ site.images_path }}{{ page.hero_image }}')">
-        <div class="header-scrim"></div>
-        <div class="container body-text-container u-full-height">
-            <div class="header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta header-cta-portfolio-entry">
-                            <h1 class="header-cta-title">{{page.title}}</h1>
-                            <h6 class="header-cta-subheader">{{page.abstract}}</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <nav class="nav-pager nav-pager-fixed">
-        {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
-        {% for entry in entries %}
-            {% if entry.title == page.title %}
-                {% unless forloop.first %}
-                    <div class="nav-pager-left nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ prev.url }}"><i class="fa fa-chevron-left nav-pager-button nav-pager-button-with-icon "></i></a>
-                     </div>
-                {% endunless %}
-                {% unless forloop.last %}
-                    {% assign next = entries[forloop.index] %}
-                     <div class="nav-pager-right nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ next.url }}"><i class="fa nav-pager-button fa-chevron-right nav-pager-button-with-icon "></i></a>
-                    </div>
-                {% endunless %}
-            {% endif %}
-            {% assign prev = entry %}
-        {% endfor %}
-        </nav>
-    </section>
-    {% endif %}
-    {% if include.context == "contact" %}
-    <section class="header header-with-image header-with-image-contact">
-        <div class="row">
-            <div class="twelve columns header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta">
-                        <h1 class="header-cta-title"><span style="color:#001c3c">Get in touch</span></h1>
-                        <a class="button button-blue" href="mailto:egle.strockyte@gmail.com">Email me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endif %}
-{% endif %}
