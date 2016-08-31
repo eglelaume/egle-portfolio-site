@@ -129,6 +129,12 @@ h6 {
   letter-spacing: 0.08rem;
 }
 
+@media screen and (max-width: 325px) {
+    .button-label {
+         font-size: 0.8rem;
+    }
+}
+
 .caption {
   font-size: 0.833rem; /* ms-1 */
   line-height: 1.2;

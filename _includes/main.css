@@ -14,13 +14,24 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
     box-sizing: border-box; 
 }
 
+.container .main-content-container {
+    width: 75%;
+}
+
+@media screen and (min-width: 656px) and (max-width: 991px) {
+    .container {
+        width: 91.66%;
+        }
+}
+
+
+
 .row {
     width: 100%;
-    margin-bottom: 20px;
     display: flex;
 }
 
@@ -109,7 +120,7 @@
 
 .navbar-logo {
     display: inline-block;
-    padding-top: 0.8rem;
+    padding-top: 0.9rem;
     text-align: left;
 }
 
@@ -132,7 +143,7 @@
         letter-spacing: 0.18rem;
     }
     .navbar-logo {
-        padding-top: 1.2rem;
+        padding-top: 1.3rem;
     }
 }
 
@@ -145,6 +156,7 @@
 .navbar-item a {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem; /* ms0 */
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
 }
@@ -153,10 +165,10 @@
 
 @media screen and (min-width: 656px) {
     .navbar-item a:hover {
-        color: #B6B6B6;
+        color: #7A7A7A;
     }
     .navbar-item {
-        padding-top: 1.2rem;
+        padding-top: 1.4rem;
     }
 }
 
@@ -174,19 +186,37 @@
     margin: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .intro-greeting {
-    width: 83.33%;
+    width: 100%;
     }
 }
+
+
+
+@media screen and (min-width: 1200px) {
+    .intro-greeting {
+    width: 83.33%
+    }
+}
+
+
 
 /* Portfolio entries strips
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .portfolio-entry-strip {
-     height: 148px;
-     padding-top: 2rem;
-     padding-bottom: 2rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+
+@media screen and (min-width: 656px) {
+    .portfolio-entry-strip {
+         height: 100%;
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+    }
 }
 
 .portfolio-entry-strip-title {
@@ -196,7 +226,13 @@
 
 .portfolio-entry-strip-subtitle {
     color: #fff;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-entry-strip-button-label {
+    color: white;
+    margin:0;
 }
 
 .pink-strip {
@@ -225,5 +261,23 @@
 
 .rouge-strip {
     background-color: #F25E88
+}
+
+/* Footer
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.contact-link {
+    color: black;
+}
+
+a.contact-link:hover {
+        color: #7A7A7A;
+    }
+
+/* Icons
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.fa {
+    display: inline-flex;
 }
 
