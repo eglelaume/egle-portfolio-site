@@ -1,0 +1,58 @@
+/* Main navigation bar
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+.navbar {
+    width: 100%;
+    height: 48px;
+    background: #000;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 656px) {
+    .navbar {
+        height: 72px;
+        }
+}
+
+.navbar-logo {
+    display: inline-block;
+    padding-top: 0.5rem;
+    text-align: left;
+}
+
+.navbar-logo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; /* ms0 */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Below is .navbar-logo type settings on any device that has resolution 656px or larger */
+
+@media screen and (min-width: 656px) {
+    .navbar-logo a {
+        font-size: 1.728rem; /* ms5 */
+        line-height: 1.2;
+        letter-spacing: 0.18rem;
+    }
+    .navbar-logo {
+        padding-top: 1rem;
+    }
+}
+
+
+.navbar-item {
+    display: inline-block;
+    padding-top: 0.5rem;
+    text-align: right;
+}
+
+
+@media screen and (min-width: 656px) {
+    .navbar-item {
+        padding-top: 0.8rem;
+    }
+}

@@ -1,28 +1,28 @@
- <nav class="navbar" style="background-color: #{{ page.header_color }}">
-
-    <div class="container">
+<nav class="navbar" style="background-color: #{{ page.header_color }}">
         <div class="row">
-            <div class="col-6 navbar-logo">
+            <div class="col-6 navbar-logo padding-left-s">
                 <a href="/">egle</a>
             </div>
-            <div class="col-6 navbar-item">
-                <a href="/portfolio">About</a>
+            <div class="col-6 navbar-item padding-right-s">
+                <a href="/portfolio"><button class="button-navigation" onMouseOver="this.style.color='#{{ page.header_color }}'" onMouseOut="this.style.color='#fff'" type="button">about</button></a>
             </div>
         </div>
-    </div>
 </nav>
+
+
+
 
 
 {% if include.context != "portfolio" %}
     {% if include.context == "home" %}
 
 
-<section class="intro-header">
+<section class="body-content-container">
     <div class="container">
         <div class="row">
-            <div class="col-7 intro-greeting">
-                <h1 class="intro-greeting-title">Hi, I'm Egle, a digital product designer.</h1>
-                <p> I've just moved to LA from London and I'd love to join a curious team to work on creating intuitive digital products, brands or service experiences. See my work below and get in touch.</p> 
+            <div class="col-7 page-section">
+                <h1 class="page-section-header-greeting">Hi, I'm a digital product designer.</h1>
+                <p class="page-section-content"> I've just moved to LA from London and I'm on a lookout to join a curious team to work on creating intuitive digital products, brands or service experiences. See my work below and get in touch.</p> 
             </div>
          </div>
     </div>

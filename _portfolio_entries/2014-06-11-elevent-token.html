@@ -9,51 +9,62 @@ abstract: Product design
 header_color: E512BB
 ---
 
-  <div class="portfolio-entry-strip pink-strip">   
-        <div class="container main-content-container">
+  <div class="portfolio-entry-strip pink-strip"> <!-- allows me to bleed the strip to full-width -->
+        <div class="container"> <!-- holds content within container -->
             <div class="row">
-                <div class="col-12">
-                   <h3 class="portfolio-entry-strip-title">The Economist</h3><p class="portfolio-entry-strip-subtitle">Web, UX</p>
+                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
+                    <div class=""><h3 class="portfolio-entry-strip-title">The Economist</h3><p class="portfolio-entry-strip-subtitle">Web, UX</p></div>
                 </div>
             </div>
         </div>
     </div>
 
-<section class=" panel-full-width u-cf">
-    <section class="body-text-container container page-section project-explanation page-section-left-aligned">
-        <div class="container main-content-container">
-            <p>Eleven Tigers is electronic music producer based in London. I was asked to design Eleven Tigers branded USB flash drive that had to look like a tiger head. Additionally, I had to deal with printers from China to manufacture the product. The limited edition flash drive was used to hold the second Eleven Tigers album called 111.</p>
-            <p><strong>My role:</strong> graphic/product designer.</p>
+    <section class="body-content-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 page-section">
+                    <p class="page-section-content">Eleven Tigers is electronic music producer based in London. I was asked to design Eleven Tigers branded USB flash drive that had to look like a tiger head. Additionally, I had to deal with printers from China to manufacture the product. The limited edition flash drive was used to hold the second Eleven Tigers album called 111.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <figure class="container">
-        <a href="{{ site.images_path }}/elevent-token/token-orange-bg.jpg"><img class="image-full-width" src="{{ site.images_path }}/elevent-token/token-orange-bg.jpg"></a>
+    <div class="body-content-container container">
+        <figure class="col-7 page-section">
+            <a href="{{ site.images_path }}/elevent-token/token-orange-bg.jpg"><img class="full-width" src="{{ site.images_path }}/elevent-token/token-orange-bg.jpg"></a>
+        </figure>
+    </div>
+
+
+   <section class="body-content-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 page-section">
+                    <h3 class="page-section-header">Prototyping</h3>
+                    <p class="page-section-content">After discussing client's vision for the product I went straight into Google SketchUp and started prototyping. You can see the snippets from the 3D product drawings as they were supplied to printers below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <figure class="body-content-container container">
+        <a href="{{ site.images_path }}/elevent-token/token-sketches.jpg"><img class="page-section" src="{{ site.images_path }}/elevent-token/token-sketches.jpg"></a>
     </figure>
-</section>
 
-<section class="panel-full-width u-cf">
-    <section class="body-text-container container page-section project-explanation page-section-left-aligned">
-        <h3 class="page-section-header">Prototyping</h3>
-        <div class="page-section-content">
-            <p>After discussing client's vision for the product I went straight into Google SketchUp and started prototyping. You can see the snippets from the 3D product drawings as they were supplied to printers below.</p>
+
+<section class="body-content-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 page-section">
+                    <h3 class="page-section-header">The result</h3>
+                    <p class="page-section-content">I went for an extremely stylized tiger head design incorporating prominent 111 logo on the front. Around two hundred flash drives were dispatched worldwide to Eleven Tigers fans who crowd-funded the album.</p>
+                </div>
+            </div>
         </div>
     </section>
-</section>
 
-    <figure class="figure-full-bleed">
-        <a href="{{ site.images_path }}/elevent-token/token-sketches.jpg"><img class="image-full-width" src="{{ site.images_path }}/elevent-token/token-sketches.jpg"></a>
+
+ <figure class="body-content-container container">
+        <a href="{{ site.images_path }}/elevent-token/token-result.jpg"><img class="page-section" src="{{ site.images_path }}/elevent-token/token-result.jpg"></a>
     </figure>
 
-<section class="panel-color-grey panel-full-width u-cf">
-    <section class="body-text-container container page-section project-explanation page-section-left-aligned">
-        <h3 class="page-section-header">The result</h3>
-        <div class="page-section-content">
-            <p>I went for an extremely stylized tiger head design incorporating prominent 111 logo on the front. Around two hundred flash drives were dispatched worldwide to Eleven Tigers fans who crowd-funded the album.</p>
-        </div>
-    </section>
-</section>
-
- <figure class="figure-full-bleed">
-        <a href="{{ site.images_path }}/elevent-token/token-result.jpg"><img class="image-full-width" src="{{ site.images_path }}/elevent-token/token-result.jpg"></a>
-</figure>

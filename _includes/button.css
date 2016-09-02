@@ -45,6 +45,7 @@ input[type="button"]:visited {
   color: #fff;
   border-color: #fff;
   outline: 0; }
+
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -66,4 +67,34 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+
+
+.button.button-navigation,
+button.button-navigation,
+input[type="submit"].button-navigation,
+input[type="reset"].button-navigation,
+input[type="button"].button-navigation {
+  color: #FFF;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #fff; }
+.button.button-navigation:hover,
+button.button-navigation:hover,
+input[type="submit"].button-navigation:hover,
+input[type="reset"].button-navigation:hover,
+input[type="button"].button-navigation:hover 
+.button.button-navigation:focus,
+button.button-navigation:focus,
+input[type="submit"].button-navigation:focus,
+input[type="reset"].button-navigation:focus,
+input[type="button"].button-navigation:focus {
+  color: ;
+  background-color: #FFF;
+  border-color: #FFF; }
+     @media screen and (max-width: 656px) {
+        .button-navigation {
+        height: 30px;
+        }
+} 
+
 

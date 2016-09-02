@@ -21,9 +21,12 @@
 
 @media screen and (min-width: 656px) and (max-width: 991px) {
     .container {
-        width: 91.66%;
+        width: 83.33%;
         }
 }
+
+
+
 
 .flexcontainer {
     display: -webkit-flex;
@@ -57,12 +60,14 @@
 }
 
 
-
-
-
 .row {
     width: 100%;
     display: flex;
+}
+
+
+.indented-row {
+    padding: 0 24px;
 }
 
 .col-1 {
@@ -114,123 +119,44 @@
 }
 
 
-.test-pad {
-    width: 50%;
-    height: 100px;
-    background: red;
-    display: flex;
-    margin-right: 30px;
-}
-
-.test {
-    width: 50%;
-    height: 100px;
-    background: red;
-    display: flex;
-}
-
-
-/* Main navigation bar
-––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-.navbar {
-    width: 100%;
-    height: 56px;
-    background: #000;
-    box-sizing: border-box;
-}
-
-@media screen and (min-width: 656px) {
-    .navbar {
-        height: 80px;
-        }
-}
-
-.navbar-logo {
-    display: inline-block;
-    padding-top: 0.9rem;
-    text-align: left;
-}
-
-.navbar-logo a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem; /* ms0 */
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Below is .navbar-logo type settings on any device that has resolution 656px or larger */
-
-@media screen and (min-width: 656px) {
-    .navbar-logo a {
-        font-size: 1.728rem; /* ms5 */
-        line-height: 1.2;
-        letter-spacing: 0.18rem;
-    }
-    .navbar-logo {
-        padding-top: 1.3rem;
-    }
-}
-
-.navbar-item {
-    display: inline-block;
-    padding-top: 1rem;
-    text-align: right;
-}
-
-.navbar-item a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem; /* ms0 */
-    font-weight: 500;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Below is navbar-item type settings on any device that has resolution 656px or larger */
-
-@media screen and (min-width: 656px) {
-    .navbar-item a:hover {
-        color: #7A7A7A;
-    }
-    .navbar-item {
-        padding-top: 1.4rem;
-    }
-}
-
-
 /* Intro header
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.intro-header {
+.body-content-container {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
 }
 
-.intro-greeting {
+.page-section {
     margin: auto;
+    max-width: 100%;
 }
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .intro-greeting {
+    .page-section{
     width: 66.66%;
     }
 }
 
 
 @media screen and (max-width: 991px) {
-    .intro-greeting {
+    .page-section {
         width: 100%;
         }
 }
 
 
 
-.intro-greeting-title {
+
+.page-section-header {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+
+.page-section-header-greeting {
     margin: 0;
     padding-bottom: 1rem;
 }
@@ -335,10 +261,11 @@ a.contact-link:hover {
         }
 }
 
-/* Icons
+/* Image
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+ .full-width {
+    width: 100%;
+ }
 
-.fa {
-    display: inline-flex;
-}
+
 
