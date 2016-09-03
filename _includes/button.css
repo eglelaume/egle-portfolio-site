@@ -74,6 +74,7 @@ button.button-navigation,
 input[type="submit"].button-navigation,
 input[type="reset"].button-navigation,
 input[type="button"].button-navigation {
+  line-height: 2.7;
   color: #FFF;
   background-color: transparent;
   border-radius: 2px;
@@ -88,13 +89,14 @@ button.button-navigation:focus,
 input[type="submit"].button-navigation:focus,
 input[type="reset"].button-navigation:focus,
 input[type="button"].button-navigation:focus {
-  color: ;
   background-color: #FFF;
   border-color: #FFF; }
      @media screen and (max-width: 656px) {
         .button-navigation {
         height: 30px;
+        padding: 0 10px;
         }
 } 
+
 
 

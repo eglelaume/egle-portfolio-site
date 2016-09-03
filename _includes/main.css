@@ -196,10 +196,16 @@
     margin: 0;
 }
 
+
 .portfolio-entry-strip-subtitle {
     color: #fff;
     margin: 0;
 }
+
+.portfolio-entry-link {
+    text-decoration: none;
+}
+
 
 .portfolio-entry-strip-button-label {
     color: white;
@@ -210,8 +216,23 @@
     background-color: #E512BB;
 }
 
+
+.pink-strip-index:hover {
+    background-color: #CF12A9;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 .cyan-strip {
     background-color: #24BEFF;
+}
+
+.cyan-strip-index:hover {
+    background-color: #22ACE7;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
 }
 
 .blue-strip {
@@ -222,17 +243,46 @@
     background-color: #9E00FF;
 }
 
+.lilac-strip-index:hover {
+    background-color: #8F02E7;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 .teal-strip {
     background-color: #25CAB4;
+}
+
+.teal-strip-index:hover {
+    background-color: #23B7A3;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
 }
 
 .purple-strip {
     background-color: #34008C
 }
 
+.purple-strip-index:hover {
+    background-color: #2D0474;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 .rouge-strip {
     background-color: #F25E88
 }
+
+.rouge-strip-index:hover {
+    background-color: #DB567C;
+     transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 
 /* Footer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
