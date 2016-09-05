@@ -1,12 +1,11 @@
 ---
 layout: default
 context: home
-header_color: 121212
+accent_color: 121212
 ---
 
-<section class="portfolio-entries">
+<section class="portfolio-entries" id="recent-work">
     {% for entry in site.portfolio_entries %}
-
     <a href="{{ entry.url }}" class="portfolio-entry-link">
         <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
             <div class="container z-index-2"> <!-- holds content within container -->
@@ -23,76 +22,10 @@ header_color: 121212
             <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ entry.accent_color }}"></div>
         </div>
     </a>
-   
     {% endfor %}
-
 </section>
 
  
-
-<!--     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip cyan-strip cyan-strip-index">
-        <div class="container"> 
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">Case</h3>
-                        <p class="portfolio-entry-strip-subtitle">Interaction, Visual Design</p>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </div></a>
-
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip lilac-strip lilac-strip-index">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">GTR website</h3>
-                        <p class="portfolio-entry-strip-subtitle">Web, Product Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></a>
-
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip teal-strip teal-strip-index">
-        <div class="container"> 
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">Illustrated covers</h3>
-                        <p class="portfolio-entry-strip-subtitle">Art Direction, Illustration</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></a>
-
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip purple-strip purple-strip-index">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">111 USB flash drive</h3>
-                        <p class="portfolio-entry-strip-subtitle">3D Rendering, Visual Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></a>
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip rouge-strip rouge-strip-index">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">Editorial design</h3>
-                        <p class="portfolio-entry-strip-subtitle">Typography, Layout</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></a>
-</section>
- -->
 <!-- FLEXBOX LAYOUT EXAMPLE:
 <div class="container"> 
             <div class="row">

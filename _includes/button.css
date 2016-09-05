@@ -99,4 +99,34 @@ input[type="button"].button-navigation:focus {
 } 
 
 
+.button.button-navigation-no-border,
+button.button-navigation-no-border,
+input[type="submit"].button-navigation-no-border,
+input[type="reset"].button-navigation-no-border,
+input[type="button"].button-navigation-no-border {
+  line-height: 2.7;
+  color: #FFF;
+  background-color: transparent;
+  border: none; }
+.button.button-navigation-no-border:hover,
+button.button-navigation-no-border:hover,
+input[type="submit"].button-navigation-no-border:hover,
+input[type="reset"].button-navigation-no-border:hover,
+input[type="button"].button-navigation-no-border:hover 
+.button.button-navigation-no-border:focus,
+button.button-navigation-no-border:focus,
+input[type="submit"].button-navigation-no-border:focus,
+input[type="reset"].button-navigation-no-border:focus,
+input[type="button"].button-navigation-no-border:focus {
+  color: #FFF;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: none; }
+     @media screen and (max-width: 656px) {
+        .button-navigation {
+        height: 30px;
+        padding: 0 10px;
+        }
+}
+
 

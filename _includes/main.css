@@ -167,6 +167,10 @@
 /* Portfolio entries strips
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+#recent-work {
+    background-color: #F2F2F2;
+}
+
 .portfolio-entry-strip {
     height: 100%;
     padding-top: 2.5rem;
@@ -221,7 +225,7 @@
 }
 
 .portfolio-entry-strip:hover > .strip-overlay-index {
-    background-color: rgba(18, 18, 18, 0.6);
+    background-color: rgba(18, 18, 18, 0.3);
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
