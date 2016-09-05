@@ -216,10 +216,13 @@
     background-color: #E512BB;
 }
 
+.strip-overlay-index {
+    background-color: transparent;
+}
 
-.pink-strip-index:hover {
-    background-color: #CF12A9;
-     transition: background-color .25s ease-in-out;
+.portfolio-entry-strip:hover > .strip-overlay-index {
+    background-color: rgba(18, 18, 18, 0.6);
+    transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
 }
@@ -313,9 +316,49 @@ a.contact-link:hover {
 
 /* Image
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
- .full-width {
+
+
+/* Util
+*/
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    }
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+.full-width {
     width: 100%;
- }
+}
 
+.z-index-0 {
+    z-index: 0;
+}
 
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-top-0 {
+    top: 0;
+}
+
+.pos-bot-0 {
+    bottom: 0;
+}
 

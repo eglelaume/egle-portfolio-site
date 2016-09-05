@@ -5,22 +5,33 @@ header_color: 121212
 ---
 
 <section class="portfolio-entries">
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip pink-strip pink-strip-index"> <!-- allows me to bleed the strip to full-width -->
-        <div class="container"> <!-- holds content within container -->
-            <div class="row">
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class="">
-                        <h3 class="portfolio-entry-strip-title">The Economist</h3>
-                        <p class="portfolio-entry-strip-subtitle">Web, UX</p>
+    {% for entry in site.portfolio_entries %}
+
+    <a href="{{ entry.url }}" class="portfolio-entry-link">
+        <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
+            <div class="container z-index-2"> <!-- holds content within container -->
+                <div class="row">
+                    <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
+                        <div class="">
+                            <h3 class="portfolio-entry-strip-title">{{ entry.title }}</h3>
+                            <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-         </div>
-    </div></a>
+             </div>
+            <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
+            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ entry.accent_color }}"></div>
+        </div>
+    </a>
+   
+    {% endfor %}
 
-    <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip cyan-strip cyan-strip-index">
-        <div class="container"> <!-- holds content within container -->
-            <div class="row">
+</section>
+
+ 
+
+<!--     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip cyan-strip cyan-strip-index">
+        <div class="container"> 
                 <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
                     <div class="">
                         <h3 class="portfolio-entry-strip-title">Case</h3>
@@ -32,7 +43,7 @@ header_color: 121212
     </div></a>
 
     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip lilac-strip lilac-strip-index">
-        <div class="container"> <!-- holds content within container -->
+        <div class="container"> 
             <div class="row">
                 <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
                     <div class="">
@@ -45,8 +56,7 @@ header_color: 121212
     </div></a>
 
     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip teal-strip teal-strip-index">
-        <div class="container"> <!-- holds content within container -->
-            <div class="row">
+        <div class="container"> 
                 <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
                     <div class="">
                         <h3 class="portfolio-entry-strip-title">Illustrated covers</h3>
@@ -58,7 +68,7 @@ header_color: 121212
     </div></a>
 
     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip purple-strip purple-strip-index">
-        <div class="container"> <!-- holds content within container -->
+        <div class="container"> 
             <div class="row">
                 <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
                     <div class="">
@@ -70,7 +80,7 @@ header_color: 121212
         </div>
     </div></a>
     <a href="/portfolio/elevent-token/" class="portfolio-entry-link"><div class="portfolio-entry-strip rouge-strip rouge-strip-index">
-        <div class="container"> <!-- holds content within container -->
+        <div class="container"> 
             <div class="row">
                 <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
                     <div class="">
@@ -82,7 +92,7 @@ header_color: 121212
         </div>
     </div></a>
 </section>
-
+ -->
 <!-- FLEXBOX LAYOUT EXAMPLE:
 <div class="container"> 
             <div class="row">
