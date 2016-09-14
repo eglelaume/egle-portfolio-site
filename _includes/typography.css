@@ -117,6 +117,13 @@ h6 {
 }
 
 
+@media screen and (max-width: 400px) {
+    h6 {
+      font-size: 0.8rem;
+      }
+}
+
+
 .uppercase-title {
   font-size: 1rem; /* ms0 */
   text-transform: uppercase;
@@ -125,18 +132,7 @@ h6 {
 }
 
 
-.button-label {
-  font-size: 0.833rem; /* ms-1 */
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.08rem;
-}
 
-@media screen and (max-width: 325px) {
-    .button-label {
-         font-size: 0.8rem;
-    }
-}
 
 .caption {
   font-size: 0.833rem; /* ms-1 */
@@ -152,3 +148,5 @@ h6 {
       font-size: 0.694rem; /* ms-2 */
       }
 }
+
+

@@ -1,4 +1,3 @@
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -25,49 +24,10 @@
         }
 }
 
-
-
-
-.flexcontainer {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-
-}
-
-@media screen and (max-width: 730px) {
-    .flexcontainer {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    align-items: flex-start;
-
-    }
-}
-
-.portfolio-entry-button {
-   margin-left: auto;
-   -webkit-align-items: flex-end;
-}
-
-
-@media screen and (max-width: 730px) {
-    .portfolio-entry-button {
-         margin-left: 0;
-         margin-top: 1.8rem;
-    }
-}
-
-
-.row {
+.col {
     width: 100%;
-    display: flex;
-}
-
-
-.indented-row {
-    padding: 0 24px;
+    float: left;
+    box-sizing: border-box;
 }
 
 .col-1 {
@@ -85,6 +45,7 @@
 .col-4 {
     width: 33.33%;
 }
+
 
 .col-5 {
     width: 41.66%;
@@ -118,6 +79,33 @@
     width: 100%;
 }
 
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+
+@media screen and (min-width: 480px) {
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+
 
 /* Intro header
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -128,15 +116,21 @@
 
 }
 
+.body-content-container-panel {
+    background-color: #F2F2F2;
+}
+
+
 .page-section {
     margin: auto;
     max-width: 100%;
+    float: none;
 }
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .page-section{
-    width: 66.66%;
+    .page-section {
+        width: 66.66%;
     }
 }
 
@@ -148,11 +142,16 @@
 }
 
 
+.page-section-full-width {
+    margin: auto;
+    max-width: 100%;
+}
+
 
 
 .page-section-header {
     margin: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -177,10 +176,14 @@
     padding-bottom: 2.5rem;
     }
 
+.portfolio-entry-strip-header {
+    padding-bottom: 1.5rem;
+}
 
 
 .portfolio-entry-strip-content-container {
     margin: auto;
+    float: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -235,13 +238,6 @@
     background-color: #24BEFF;
 }
 
-.cyan-strip-index:hover {
-    background-color: #22ACE7;
-     transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
-}
-
 .blue-strip {
     background-color: #4C6EFF;
 }
@@ -250,44 +246,16 @@
     background-color: #9E00FF;
 }
 
-.lilac-strip-index:hover {
-    background-color: #8F02E7;
-     transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
-}
-
 .teal-strip {
     background-color: #25CAB4;
-}
-
-.teal-strip-index:hover {
-    background-color: #23B7A3;
-     transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
 }
 
 .purple-strip {
     background-color: #34008C
 }
 
-.purple-strip-index:hover {
-    background-color: #2D0474;
-     transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
-}
-
 .rouge-strip {
     background-color: #F25E88
-}
-
-.rouge-strip-index:hover {
-    background-color: #DB567C;
-     transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
 }
 
 
@@ -304,6 +272,7 @@ a.contact-link:hover {
 
 .footer-details {
     margin: auto;
+    float: none;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -318,12 +287,13 @@ a.contact-link:hover {
         }
 }
 
-/* Image
+h2.footer-content {
+    margin: auto;
+}
+
+/* Utilities
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-
-/* Util
-*/
 .group:after {
     visibility: hidden;
     display: block;
@@ -365,4 +335,120 @@ a.contact-link:hover {
 .pos-bot-0 {
     bottom: 0;
 }
+
+.u-pull-right {
+  float: right; 
+}
+
+.u-pull-left {
+  float: left; 
+}
+
+
+/* Other elements
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.inline-link {
+    text-decoration: underline;
+    color: #212121;
+}
+
+.inline-link:hover {
+    color: #7A7A7A;
+}
+
+.uppercase-link { 
+  font-size: 0.694rem; /* ms-1 */
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  margin: 0px;
+}
+
+
+
+.flexcontainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 656px) {
+    .flexcontainer {
+        flex-direction: row;
+        }
+}
+
+
+.portfolio-entry-button {
+   margin-left: auto;
+   -webkit-align-items: flex-end;
+}
+
+
+@media screen and (max-width: 730px) {
+    .portfolio-entry-button {
+         margin-left: 0;
+         margin-top: 1.8rem;
+    }
+}
+
+
+.mobile-single {
+    padding: 1rem;
+}
+
+
+.image-full-width {
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.grey-panel-full-width {
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+
+
+/* Pager
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+.pager-link {
+    margin: auto;
+
+}
+
+.inline-link-white {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pager-strip {
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pager-strip:hover > .strip-overlay-index {
+    background-color: rgba(18, 18, 18, 0.3);
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 

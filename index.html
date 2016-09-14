@@ -9,12 +9,10 @@ accent_color: 121212
     <a href="{{ entry.url }}" class="portfolio-entry-link">
         <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
             <div class="container z-index-2"> <!-- holds content within container -->
-                <div class="row">
-                    <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                        <div class="">
-                            <h3 class="portfolio-entry-strip-title">{{ entry.title }}</h3>
-                            <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
-                        </div>
+                <div class="col col-7 portfolio-entry-strip-content-container">
+                    <div class="">
+                        <h3 class="portfolio-entry-strip-title">{{ entry.title }}</h3>
+                        <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
                     </div>
                 </div>
              </div>
@@ -25,14 +23,4 @@ accent_color: 121212
     {% endfor %}
 </section>
 
- 
-<!-- FLEXBOX LAYOUT EXAMPLE:
-<div class="container"> 
-            <div class="row">
-                <div class="col-7 portfolio-entry-strip-content-container flexcontainer">
-                    <div class=""><h3 class="portfolio-entry-strip-title">Editorial design</h3><p class="portfolio-entry-strip-subtitle">Typography, Layout</p></div>
-                    <div class="portfolio-entry-button"><button class="" type="button">see the case study</button></div> 
-                </div>
-            </div>
-        </div>  --> 
 

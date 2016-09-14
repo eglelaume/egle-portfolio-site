@@ -1,40 +1,26 @@
 <nav class="navbar" style="background-color: #{{ page.accent_color }}">
-        <div class="row">
-            <div class="col-6 navbar-logo padding-left-s">
-                <a href="/">egle</a>
-            </div>
-            <div class="col-6 navbar-item padding-right-s">
-                <a href="/index.html#recent-work"><button class="button-navigation-no-border" type="button">work</button></a>
-                <a href="/portfolio"><button class="button-navigation" onMouseOver="this.style.color='#{{ page.accent_color }}'" onMouseOut="this.style.color='#fff'" type="button">about</button></a>
-            </div>
-        </div>
+    <div class="col col-3 navbar-logo padding-left-s">
+        <a href="/">egle</a>
+    </div>
+    <div class="col col-9 navbar-item padding-right-s">
+        <a href="/index.html#recent-work" class="navbar-item-title">work</a>
+        <a href="/portfolio" class="navbar-item-title">about</a>
+    </div>
 </nav>
-
-
-
-
 
 {% if include.context != "portfolio" %}
     {% if include.context == "home" %}
 
-
-<section class="">
-    <div class="container padding-bottom-l padding-top-l">
-        <div class="row">
-            <div class="col-7 page-section">
-                <h1 class="page-section-header-greeting">Hi, I'm a digital product designer.</h1>
-                <p class="page-section-content"> I've just moved to LA from London and I'm on a lookout to join a curious team to work on creating intuitive digital products, brands or service experiences. See my work below and get in touch.</p> 
-            </div>
-         </div>
+<section class="padding-bottom-l padding-top-l">
+    <div class="container">
+        <div class="col col-7 page-section">
+            <h1 class="page-section-header-greeting">Hi, I'm a digital product designer.</h1>
+            <p class="page-section-content"> I've just moved to LA from London and I'm on a lookout to join a curious team to work on creating intuitive digital products, brands or service experiences. See my work below and get in touch.</p> 
+        </div>
     </div>
 </section>
-
-
 
     {% endif %}
 {% endif %}
 
-
-
-  
 
