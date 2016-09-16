@@ -344,15 +344,20 @@ h2.footer-content {
   float: left; 
 }
 
+.image-block {
+    display: block;
+}
 
 /* Other elements
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 hr {
     border: 0;
-    height: 0;
+    height: 0px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0px;
+    margin: 0px;
 }
 
 
