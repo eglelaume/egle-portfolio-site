@@ -161,6 +161,26 @@
 }
 
 
+.about-image {
+    margin: auto;
+    max-width: 100%;
+    float: none;
+}
+
+
+
+@media screen and (min-width: 656px) and (max-width: 780px) {
+    .about-image {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .about-image {
+        width: 60%;
+        }
+}
+
 
 
 /* Portfolio entries strips
