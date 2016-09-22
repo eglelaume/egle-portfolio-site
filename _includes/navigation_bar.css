@@ -16,18 +16,21 @@
 
 .navbar-logo {
     display: inline-block;
-    padding-top: 0.9rem;
+    padding-top: 0.7rem;
     text-align: left;
 }
 
 .navbar-logo a {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem; /* ms0 */
+    font-size: 1.44rem; /* ms0 */
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1rem;
     text-decoration: none;
     color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
 }
 
 /* Below is .navbar-logo type settings on any device that has resolution 656px or larger */
@@ -47,6 +50,7 @@
 .navbar-item {
     display: inline-block;
     padding-top: 0.95rem;
+    padding-bottom: 0.95rem;
     text-align: right;
 }
 
@@ -60,7 +64,7 @@
 
 
 .navbar-item-title {
-  font-size: 0.694rem;
+  font-size: 0.833rem;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 400;
@@ -68,13 +72,19 @@
   letter-spacing: 0.08rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .navbar-item-title:hover {
     text-decoration: underline;
     }
 
+
+.navbar-item-title-left {
+  padding-right: 1rem;
+}
 
 
 
