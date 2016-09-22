@@ -1,82 +1,26 @@
- <nav class="navbar">
-    <div class="container">
-        <div class="navbar-logo">
-            <a href="/">egle strockyte</a>
-        </div>
-
-        <label for="show-menu" class="show-menu">
-            <i class="fa fa-bars"></i>
-        </label>
-        <input class="menu-toggle" type="checkbox" id="show-menu" role="button">
-
-        <ul class="navbar-list">
-            <li class="navbar-item"><a href="/portfolio">Portfolio</a></li>
-            <li class="navbar-item"><a href="/contact">Contact</a></li>
-        </ul>
+<nav class="navbar" style="background-color: #{{ page.accent_color }}">
+    <div class="col col-3 navbar-logo padding-left-s">
+        <a href="/">egle</a>
+    </div>
+    <div class="col col-9 navbar-item padding-right-s">
+        <a href="/index.html#recent-work" class="navbar-item-title navbar-item-title-left">work</a>
+        <a href="/about" class="navbar-item-title">about</a>
     </div>
 </nav>
 
 {% if include.context != "portfolio" %}
     {% if include.context == "home" %}
-    <section class="header header-with-image">
-        <div class="row">
-            <div class="twelve columns header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta">
-                        <h1 class="header-cta-title">Hi! My name is Egle</h1>
-                        <a class="button button-primary" href="/portfolio">View my portfolio</a>
-                    </div>
-                </div>
-            </div>
+
+<section class="padding-bottom-l padding-top-l">
+    <div class="container">
+        <div class="col col-7 page-section">
+            <h1 class="page-section-header-greeting">Hi, I'm a digital product designer.</h1>
+            <p class="page-section-content"> I've just moved to LA from London and I'm on a lookout to join a curious team to work on creating intuitive digital products, platforms, brands or service experiences. Let's chat to see how we could work together.</p> 
         </div>
-    </section>
-    {% endif %}
-    {% if include.context == "portfolio_entry" %}
-    <section class="header header-with-image" style="background-image: url('{{ site.images_path }}{{ page.hero_image }}')">
-        <div class="header-scrim"></div>
-        <div class="container body-text-container u-full-height">
-            <div class="header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta header-cta-portfolio-entry">
-                            <h1 class="header-cta-title">{{page.title}}</h1>
-                            <h6 class="header-cta-subheader">{{page.abstract}}</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <nav class="nav-pager nav-pager-fixed">
-        {% assign entries = site.portfolio_entries | sort: 'date' | reverse %}
-        {% for entry in entries %}
-            {% if entry.title == page.title %}
-                {% unless forloop.first %}
-                    <div class="nav-pager-left nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ prev.url }}"><i class="fa fa-chevron-left nav-pager-button nav-pager-button-with-icon "></i></a>
-                     </div>
-                {% endunless %}
-                {% unless forloop.last %}
-                    {% assign next = entries[forloop.index] %}
-                     <div class="nav-pager-right nav-pager-button-wrap">
-                        <a href="{{ site.baseurl }}{{ next.url }}"><i class="fa nav-pager-button fa-chevron-right nav-pager-button-with-icon "></i></a>
-                    </div>
-                {% endunless %}
-            {% endif %}
-            {% assign prev = entry %}
-        {% endfor %}
-        </nav>
-    </section>
-    {% endif %}
-    {% if include.context == "contact" %}
-    <section class="header header-with-image header-with-image-contact">
-        <div class="row">
-            <div class="twelve columns header-content">
-                <div class="header-cta-wrap">
-                    <div class="header-cta">
-                        <h1 class="header-cta-title"><span style="color:#001c3c">Get in touch</span></h1>
-                        <a class="button button-blue" href="mailto:egle.strockyte@gmail.com">Email me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
+
     {% endif %}
 {% endif %}
+
+

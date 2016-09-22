@@ -1,5 +1,12 @@
 ---
 ---
 {% include normalize.css %}
-{% include skeleton.css %}
+{% include button.css %}
 {% include main.css %}
+{% include navigation_bar.css %}
+{% include typography.css %}
+{% include paddings.css %}
+
+
+
+
