@@ -5,11 +5,17 @@ accent_color: 121212
 ---
 
 <section class="portfolio-entries" id="recent-work">
+
+    <div class="container">
+        <p class="caption">Featured work</p>
+        <hr/>
+    </div>
+
     {% for entry in site.portfolio_entries %}
     <a href="{{ entry.url }}" class="portfolio-entry-link">
         <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
             <div class="container z-index-2"> <!-- holds content within container -->
-                <div class="col col-7 portfolio-entry-strip-content-container">
+                <div class="col col-7 center portfolio-entry-strip-content-container">
                     <div class="">
                         <h3 class="portfolio-entry-strip-title">{{ entry.title }}</h3>
                         <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
@@ -17,30 +23,25 @@ accent_color: 121212
                 </div>
              </div>
             <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ entry.accent_color }}"></div>
         </div>
     </a>
+    <div class="container">
+        <hr/>
+    </div>
     {% endfor %}
 </section>
 
-<section class="padding-bottom-l padding-top-l">
-    <div class="container">
-        <div class="col col-7 page-section">
-          <h1 class="page-section-header-greeting">Other projects.</h1>
-          <p class="page-section-content">Whilst at Edenspiekermann I also worked on the digital redesign strategy for the <a href="https://www.capitalmarketassumptions.com/" target="_blank" class="inline-link">Northern Trust<a>, a financial services provider.</p>
-          <br>
-          <p class="page-section-content">I designed and shipped the new responsive website for the <a href="https://www.gtreview.com/" target="_blank" class="inline-link">Global Trade Review (GTR)<a>, a publisher and event organiser for the global trade, commodity and supply chain finance industries.</p>
-          <br>
-          <p class="page-section-content">As a freelancer I designed a USB flash drive to hold <a href="https://eleventigers.bandcamp.com/album/111" target="_blank" class="inline-link">111 music album<a>, which is the second live-recorded album by music producer Eleven Tigers.</p>
-          <br>
-          <p class="page-section-content">I routinely give design critique of students’ work at California State University, Long Beach.</p>
+<section class="portfolio-other-work container padding-top-l padding-bottom-l" id="other-work">
 
-        </div>
+    <div class="col col-7 center">
+      <h1 class="page-section-header-greeting">Other projects.</h1>
+      <p class="page-section-content">Whilst at Edenspiekermann I also worked on the digital redesign strategy for the <a href="https://www.capitalmarketassumptions.com/" target="_blank" class="inline-link">Northern Trust</a>, a financial services provider.</p>
+      <br>
+      <p class="page-section-content">I designed and shipped the new responsive website for the <a href="https://www.gtreview.com/" target="_blank" class="inline-link">Global Trade Review (GTR)</a>, a publisher and event organiser for the global trade, commodity and supply chain finance industries.</p>
+      <br>
+      <p class="page-section-content">As a freelancer I designed a USB flash drive to hold <a href="https://eleventigers.bandcamp.com/album/111" target="_blank" class="inline-link">111 music album</a>, which is the second live-recorded album by music producer Eleven Tigers.</p>
+      <br>
+      <p class="page-section-content">I routinely give design critique of students’ work at California State University, Long Beach.</p>
     </div>
+
 </section>
-
-<div class="container">
-    <div class="col">
-        <hr>
-    </div>
-</div>
