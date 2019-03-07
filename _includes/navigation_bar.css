@@ -42,7 +42,7 @@
         letter-spacing: 0.18rem;
     }
     .navbar-logo {
-        padding-top: 0.75rem;
+      height: 100%;
     }
 }
 
@@ -51,6 +51,8 @@
     display: inline-block;
     padding-top: 0.95rem;
     padding-bottom: 0.95rem;
+    line-height: 1.5rem;
+    height: 100%;
     text-align: right;
 }
 
@@ -66,15 +68,15 @@
 .navbar-item-title {
   font-size: 0.833rem;
   font-family: 'Karla', sans-serif;
-  color: black;
+  color: white;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-item-title:hover {
@@ -85,6 +87,3 @@
 .navbar-item-title-left {
   padding-right: 1rem;
 }
-
-
-
