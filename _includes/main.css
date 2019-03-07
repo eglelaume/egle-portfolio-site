@@ -186,46 +186,37 @@
 /* Portfolio entries strips
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-#recent-work {
-    background-color: #F2F2F2;
-}
-
 .portfolio-entry-strip {
     height: 100%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    }
+}
 
 .portfolio-entry-strip-header {
     padding-bottom: 1.5rem;
 }
 
-
-.portfolio-entry-strip-content-container {
-    margin: auto;
-    float: none;
-}
-
 @media screen and (max-width: 991px) {
     .portfolio-entry-strip-content-container {
         width: 100%;
-        }
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .portfolio-entry-strip-content-container {
-    width: 66.66%;
+        width: 66.66%;
     }
 }
 
 .portfolio-entry-strip-title {
-    color: #fff;
+    color: #4B4DFF;
+    text-decoration: underline;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 
 .portfolio-entry-strip-subtitle {
-    color: #fff;
     margin: 0;
     line-height: 1.44rem;
 }
@@ -284,32 +275,19 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .contact-link {
-    color: black;
-}
-
-a.contact-link:hover {
-        color: #7A7A7A;
-    }
-
-.footer-details {
-    margin: auto;
-    float: none;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .footer-details{
-    width: 66.66%;
+        width: 66.66%;
     }
 }
 
 @media screen and (max-width: 991px) {
     .footer-details {
         width: 100%;
-        }
-}
-
-h2.footer-content {
-    margin: auto;
+    }
 }
 
 /* Utilities
@@ -327,6 +305,11 @@ h2.footer-content {
 
 .full-width {
     width: 100%;
+}
+
+.center {
+    margin: auto;
+    float: none;
 }
 
 .z-index-0 {
@@ -448,11 +431,19 @@ hr {
     background-color: #FAFAFA;
 }
 
-
+.gradient-border {
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%); 
+    border-image-slice: 1; 
+    border-width: 0.75rem;
+}
 
 /* Pager
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+.pagers {
+    margin-bottom: 8rem;
+}
 
 .pager-link {
     margin: auto;

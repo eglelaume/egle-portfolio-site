@@ -5,11 +5,17 @@ accent_color: 121212
 ---
 
 <section class="portfolio-entries" id="recent-work">
+
+    <div class="container">
+        <p class="caption">Featured work</p>
+        <hr/>
+    </div>
+    
     {% for entry in site.portfolio_entries %}
     <a href="{{ entry.url }}" class="portfolio-entry-link">
         <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
             <div class="container z-index-2"> <!-- holds content within container -->
-                <div class="col col-7 portfolio-entry-strip-content-container">
+                <div class="col col-7 center">
                     <div class="">
                         <h3 class="portfolio-entry-strip-title">{{ entry.title }}</h3>
                         <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
@@ -17,10 +23,26 @@ accent_color: 121212
                 </div>
              </div>
             <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ entry.accent_color }}"></div>
         </div>
     </a>
+    <div class="container">
+        <hr/>
+    </div>
     {% endfor %}
 </section>
 
+<section class="portfolio-other-work container padding-top-l padding-bottom-l" id="other-work">
+    
+    <div class="col col-7 center">
+        <h2>Other projects.</h2>
+        <p>Whilst at Edenspiekermann I also worked on the digital redesign strategy for the Northern Trust, a financial services provider.</p>
+        <br/>
+        <p>I designed and shipped a new responsive website for the Global Trade Review (GTR), a publisher and event organiser for the global trade, commodity and supply chain finance industries.</p>
+        <br/>
+        <p>As a freelancer I designed a USB flash drive to hold 111 music album, which is the second live-recorded album by music producer Eleven Tigers.</p>
+        <br/>
+        <p>I routenly give design critique to students work at California State University, Long Beach.</p>
+    </div>
+
+</section>
 
