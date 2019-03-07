@@ -14,7 +14,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
@@ -84,7 +84,7 @@
 .u-cf {
   content: "";
   display: table;
-  clear: both; 
+  clear: both;
 }
 
 
@@ -227,6 +227,7 @@
 .portfolio-entry-strip-subtitle {
     color: #fff;
     margin: 0;
+    line-height: 1.44rem;
 }
 
 .portfolio-entry-link {
@@ -357,11 +358,11 @@ h2.footer-content {
 }
 
 .u-pull-right {
-  float: right; 
+  float: right;
 }
 
 .u-pull-left {
-  float: left; 
+  float: left;
 }
 
 .image-block {
@@ -390,7 +391,7 @@ hr {
     color: #7A7A7A;
 }
 
-.uppercase-link { 
+.uppercase-link {
   font-size: 0.694rem; /* ms-1 */
   font-family: 'Merriweather', serif;
   text-transform: uppercase;
@@ -475,5 +476,3 @@ hr {
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
 }
-
-
