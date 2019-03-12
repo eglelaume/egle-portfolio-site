@@ -88,12 +88,30 @@
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 656px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
     .col-md-4 {
         width: 33.33%;
     }
+    .col-md-5 {
+        width: 41.66%;
+    }
     .col-md-6 {
         width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 75%;
     }
 }
 
@@ -209,16 +227,28 @@
 }
 
 .portfolio-entry-strip-title {
-    color: #4B4DFF;
-    text-decoration: underline;
     margin: 0;
     margin-bottom: 1rem;
+    display: inline-block;
+}
+
+
+.portfolio-entry-strip-title-on-page {
+    color: #000000;
+    margin: 0;
 }
 
 
 .portfolio-entry-strip-subtitle {
     margin: 0;
     line-height: 1.44rem;
+}
+
+.portfolio-entry-strip-subtitle-on-page {
+    color: #b6b6b6;
+    margin: 0;
+    line-height: 2.074rem;
+    font-weight: 300;
 }
 
 .portfolio-entry-link {
@@ -240,7 +270,7 @@
 }
 
 .portfolio-entry-strip:hover > .strip-overlay-index {
-    background-color: rgba(18, 18, 18, 0.3);
+    /*background-color: rgba(18, 18, 18, 0.3);*/
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
@@ -367,11 +397,14 @@ hr {
 
 .inline-link {
     text-decoration: underline;
-    color: #212121;
+    color: #4B4DFF;
 }
 
 .inline-link:hover {
-    color: #7A7A7A;
+    color: #30FBFD;
+    text-decoration: none;
+    border-bottom: 10px solid #30FBFD;
+    transition: color 0.2s, border 0.2s ease-in-out;
 }
 
 .uppercase-link {
@@ -416,9 +449,15 @@ hr {
 
 
 .mobile-single {
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
+
+@media screen and (min-width: 656px) {
+    .mobile-single {
+        padding-top: 0rem;
+    }
+}
 
 .image-full-width {
     display:block;
@@ -433,8 +472,8 @@ hr {
 
 .gradient-border {
     border-style: solid;
-    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%); 
-    border-image-slice: 1; 
+    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%);
+    border-image-slice: 1;
     border-width: 0.75rem;
 }
 

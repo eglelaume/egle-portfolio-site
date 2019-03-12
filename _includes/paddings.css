@@ -18,6 +18,16 @@
 	}
 }
 
+.padding-left-l {
+	padding-left: 0rem;
+}
+
+@media screen and (min-width: 656px) {
+	.padding-left-l {
+		padding-left: 4rem;
+	}
+}
+
 .padding-right-s {
 	padding-right: 1.5rem;
 }
@@ -84,10 +94,9 @@
 }
 
 .padding-top-xs {
-	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 }
 
 .padding-bottom-xs {
 	padding-bottom: 0.5rem;
 }
-
