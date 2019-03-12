@@ -214,6 +214,10 @@
     padding-bottom: 1.5rem;
 }
 
+.portfolio-entry-strip-content-container {
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 991px) {
     .portfolio-entry-strip-content-container {
         width: 100%;
@@ -394,13 +398,13 @@ hr {
     margin: 0px;
 }
 
-
 .inline-link {
     text-decoration: underline;
     color: #4B4DFF;
+    border-bottom: 10px solid transparent;
 }
 
-.inline-link:hover {
+.inline-link:hover, .portfolio-entry-link:hover .inline-link {
     color: #30FBFD;
     text-decoration: none;
     border-bottom: 10px solid #30FBFD;
@@ -415,8 +419,6 @@ hr {
   letter-spacing: 0.08rem;
   margin: 0px;
 }
-
-
 
 .flexcontainer {
     display: -webkit-flex;
@@ -433,12 +435,10 @@ hr {
         }
 }
 
-
 .portfolio-entry-button {
    margin-left: auto;
    -webkit-align-items: flex-end;
 }
-
 
 @media screen and (max-width: 730px) {
     .portfolio-entry-button {
