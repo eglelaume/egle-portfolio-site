@@ -37,44 +37,42 @@ layout: default
 </section> -->
 
 
-<section class="pagers">
+<section class="pagers container">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}" class="portfolio-entry-link">
     {% if page.next == nil %}
         <div class="col col-12 pager-strip pos-rel">
     {% else %}
-        <div class="col col-6 pager-strip pos-rel">
+        <div class="col col-4 pager-strip pos-rel">
     {% endif %}
             <div class="col col-12 pos-rel z-index-2 u-pull-left">
-                <div class="padding-left-s">
-                    <div class="u-pull-left">
-                        <h6 class="pager-link inline-link-white"> &laquo;{{page.previous.title}}</h6>
-                    </div>
+                <div class="u-pull-left">
+                    <h4 class="pager-link">←</h4>
                 </div>
              </div>
             <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ page.previous.accent_color }}"></div>
         </div>
     </a>
     {% endif %}
-
+    <a href="/#recent-work">
+        <div class="col col-4 pager-strip pos-rel">
+            <h4 class="pager-strip-title">All work</h4> 
+        </div>
+    </a>
     {% if page.next.url %}
     <a href="{{page.next.url}}" class="portfolio-entry-link">
     {% if page.previous == nil %}
         <div class="col col-12 pager-strip pos-rel">
     {% else %}
-        <div class="col col-6 pager-strip pos-rel">
+        <div class="col col-4 pager-strip pos-rel">
     {% endif %}
             <div class="col col-12 pos-rel z-index-2 u-pull-right">
-                <div class="padding-right-s">
-                    <div class="u-pull-right">
-                        <h6 class="pager-link inline-link-white">{{page.next.title}} &raquo;</h6>
-                    </div>
+                <div class="u-pull-right">
+                    <h4 class="pager-link">→</h4>
                 </div>
              </div>
             <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ page.next.accent_color }}"></div>
         </div>
     </a>
-    {% endif %}
+    {% else %}
 </section>

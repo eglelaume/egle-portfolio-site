@@ -486,7 +486,6 @@ hr {
 
 .pager-link {
     margin: auto;
-
 }
 
 .inline-link-white {
@@ -498,6 +497,12 @@ hr {
     height: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.pager-strip-title {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .pager-strip:hover > .strip-overlay-index {
