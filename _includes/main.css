@@ -505,7 +505,7 @@ hr {
     text-transform: uppercase;
 }
 
-.pager-strip:hover > .strip-overlay-index {
+.pager-strip:hover .strip-overlay-index {
     background-color: rgba(18, 18, 18, 0.3);
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
