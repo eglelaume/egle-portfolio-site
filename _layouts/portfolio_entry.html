@@ -37,13 +37,10 @@ layout: default
 </section> -->
 
 
-
-<!-- Pager solution. "IF statement specifying an actual post title (like "111 USB flash drive" and "CASE" ) needs different solution!!!" -->
-
 <section class="pagers">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}" class="portfolio-entry-link">
-    {% if page.previous.title == "111 USB flash drive" %}
+    {% if page.next == nil %}
         <div class="col col-12 pager-strip pos-rel">
     {% else %}
         <div class="col col-6 pager-strip pos-rel">
@@ -63,7 +60,7 @@ layout: default
 
     {% if page.next.url %}
     <a href="{{page.next.url}}" class="portfolio-entry-link">
-    {% if page.next.title == "The Economist" %}
+    {% if page.previous == nil %}
         <div class="col col-12 pager-strip pos-rel">
     {% else %}
         <div class="col col-6 pager-strip pos-rel">
