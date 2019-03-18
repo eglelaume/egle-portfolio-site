@@ -120,6 +120,8 @@ h5 {
   font-size: 1.2rem; /* ms1 */
   line-height: 1.2;
   font-weight: 700;
+  margin-block-start: 0em;
+  margin-block-end: 0.2em;
 }
 
 h6 {

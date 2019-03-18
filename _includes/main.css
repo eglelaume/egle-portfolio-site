@@ -481,7 +481,7 @@ hr {
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .pagers {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .pager-link {
@@ -503,6 +503,7 @@ hr {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 .pager-strip:hover .strip-overlay-index {

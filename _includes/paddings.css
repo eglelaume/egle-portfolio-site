@@ -28,6 +28,17 @@
 	}
 }
 
+.padding-left-m {
+	padding-left: 0rem;
+}
+
+@media screen and (min-width: 656px) {
+	.padding-left-m {
+		padding-left: 2rem;
+	}
+}
+
+
 .padding-right-s {
 	padding-right: 1.5rem;
 }

@@ -25,8 +25,8 @@ layout: default
     {{content}}
 </section>
 
-<section class="pagers container">
-    
+<section class="pagers container" style="background-color: #F7F7FF">
+
     <div class="col col-4 pager-strip pos-rel">
         {% if page.previous %}
         <a href="{{page.previous.url}}" class="portfolio-entry-link">
@@ -42,7 +42,7 @@ layout: default
             <h4 class="pager-strip-title">All work</h4>
         </a>
     </div>
-   
+
     <div class="col col-4 pager-strip pos-rel">
         {% if page.next %}
         <a href="{{page.next.url}}" class="portfolio-entry-link">
