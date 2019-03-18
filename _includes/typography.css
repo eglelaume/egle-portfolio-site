@@ -8,32 +8,32 @@
 :root {
   --ms-2:calc(var(--ms-1) / var(--ratio)); /* 0.694 */
   --ms-1:calc(var(--ms0) / var(--ratio)); /* 0.833 */
-  --ms0: 1;                               /* 1    */
-  --ms1: var(--ratio);                    /* 1.2   */
-  --ms2: calc(var(--ratio) * var(--ms1)); /* 1.44  */
-  --ms3: calc(var(--ratio) * var(--ms2)); /* 1.728 */
-  --ms4: calc(var(--ratio) * var(--ms3)); /* 2.074 */
-  --ms5: calc(var(--ratio) * var(--ms4)); /* 2.488 */
-  --ms6: calc(var(--ratio) * var(--ms5)); /* 2.986 */
-  --ms7: calc(var(--ratio) * var(--ms6)); /* 3.583 */
+  --ms0:1;                               /* 1    */
+  --ms1:var(--ratio);                    /* 1.2   */
+  --ms2:calc(var(--ratio) * var(--ms1)); /* 1.44  */
+  --ms3:calc(var(--ratio) * var(--ms2)); /* 1.728 */
+  --ms4:calc(var(--ratio) * var(--ms3)); /* 2.074 */
+  --ms5:calc(var(--ratio) * var(--ms4)); /* 2.488 */
+  --ms6:calc(var(--ratio) * var(--ms5)); /* 2.986 */
+  --ms7:calc(var(--ratio) * var(--ms6)); /* 3.583 */
 }
 
 html {
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-@media screen and (min-width: 656px) {
-    html {
-      font-size: 21px;
-    }
+@media screen and (min-width:656px) {
+  html {
+    font-size: 21px;
+  }
+
 }
 
 body {
   font-size: 1rem;
-  line-height: 1.728;
-    /* Better Font Rendering */
+  line-height: 1.728;    /* Better Font Rendering */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,21 +60,21 @@ h1 {
   letter-spacing: -0.08rem;
 }
 
+@media screen and (min-width:656px) {
+  h1 {
+    font-size: 2.488rem; /* ms6 */
+    line-height: 1.2;
+  }
 
-
-@media screen and (min-width: 656px) {
-    h1 {
-      font-size: 2.488rem; /* ms6 */
-      line-height: 1.2;
-      }
 }
 
-@media screen and (min-width: 992px) {
-    h1 {
-      font-size: 2.6rem; /* ms9 */
-      line-height: 1.12;
-      letter-spacing: -0.1rem;
-      }
+@media screen and (min-width:992px) {
+  h1 {
+    font-size: 2.6rem; /* ms9 */
+    line-height: 1.12;
+    letter-spacing: -0.1rem;
+  }
+
 }
 
 h2 {
@@ -84,13 +84,13 @@ h2 {
   font-weight: 700;
 }
 
-@media screen and (min-width: 656px) {
-    h2 {
-      font-size: 2.488rem; /* ms5 */
-      line-height: 1.2;
-      }
-}
+@media screen and (min-width:656px) {
+  h2 {
+    font-size: 2.488rem; /* ms5 */
+    line-height: 1.2;
+  }
 
+}
 
 h3 {
   font-family: 'Karla', sans-serif;
@@ -100,12 +100,13 @@ h3 {
   letter-spacing: 0.02rem;
 }
 
-@media screen and (min-width: 656px) {
+@media screen and (min-width:656px) {
   h3 {
     font-family: 'Karla', sans-serif;
     font-size: 1.728rem; /* ms3 */
     line-height: 1.2;
   }
+
 }
 
 h4 {
@@ -131,17 +132,14 @@ h6 {
   font-weight: 300;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
-
-
 }
 
-
-@media screen and (min-width: 656px) {
-    h6 {
-      font-size: 0.8rem;
-      line-height: 1.2rem;
-
+@media screen and (min-width:656px) {
+  h6 {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
+
 }
 
 .uppercase-title {

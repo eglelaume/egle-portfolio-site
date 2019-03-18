@@ -1,15 +1,15 @@
 /* Main navigation bar
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 .navbar {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-@media screen and (min-width: 656px) {
-    .navbar {
-    }
+@media screen and (min-width:656px) {
+  .navbar {
+  }
+
 }
 
 .navbar-logo {
@@ -30,34 +30,32 @@
 }
 
 /* Below is .navbar-logo type settings on any device that has resolution 656px or larger */
+@media screen and (min-width:656px) {
+  .navbar-logo a {
+    line-height: 1.2;
+  }
 
-@media screen and (min-width: 656px) {
-    .navbar-logo a {
-      line-height: 1.2;
-    }
-    .navbar-logo {
-      height: 100%;
-    }
+  .navbar-logo {
+    height: 100%;
+  }
+
 }
-
 
 .navbar-item {
-    display: inline-block;
-    padding-top: 0.95rem;
-    padding-bottom: 0.95rem;
-    line-height: 1.5rem;
-    height: 100%;
-    text-align: right;
+  display: inline-block;
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+  line-height: 1.5rem;
+  height: 100%;
+  text-align: right;
 }
 
+@media screen and (min-width:656px) {
+  .navbar-item {
+    padding-top: 0.85rem;
+  }
 
-@media screen and (min-width: 656px) {
-    .navbar-item {
-        padding-top: 0.85rem;
-    }
 }
-
-
 
 .navbar-item-title {
   font-size: 0.833rem;
@@ -73,9 +71,8 @@
 }
 
 .navbar-item-title:hover {
-    text-decoration: underline;
-    }
-
+  text-decoration: underline;
+}
 
 .navbar-item-title-left {
   padding-right: 1rem;
