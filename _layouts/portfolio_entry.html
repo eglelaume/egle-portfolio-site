@@ -2,79 +2,53 @@
 layout: default
 ---
 
-<!-- Portfolio entry page header strip template -->
+<div class="container padding-top-s">
+    <hr/>
+</div>
 
 <section class="portfolio-entry-header">
-    <div class="portfolio-entry-strip portfolio-entry-strip-header pos-rel" style="background-color: #{{ page.accent_color }}">
-        <div class="container"> 
-            <div class="col col-7 portfolio-entry-strip-content-container">
-                <div class="">
-                    <h3 class="portfolio-entry-strip-title">{{ page.title }}</h3>
-                    <p class="portfolio-entry-strip-subtitle">{{ page.subtitle }}</p>
+    <div class="portfolio-entry-strip portfolio-entry-strip-header pos-rel">
+        <div class="container">
+            <div class="col col-7 page-section portfolio-entry-strip-content-container">
+                <div class="col col-md-8 mobile-single">
+                    <h3 class="portfolio-entry-strip-title-on-page">{{ page.title }}</h3>
+                    <h4 class="portfolio-entry-strip-subtitle-on-page">{{ page.subtitle }}</h4>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-<section class="">
+<section>
     {{content}}
 </section>
 
-<!-- Old latest-work-widget 
+<section class="pagers container" style="background-color: #F7F7FF">
 
-<section class="container">
-    <h5 class="section-heading"><span>More from my portfolio</span></h5>
-    {% include latest_work_widget.html %}
-    <h6 class="page-section-link page-section-link-centered"><a href="/portfolio">View all projects</a></h6>
-</section> -->
-
-
-
-<!-- Pager solution. "IF statement specifying an actual post title (like "111 USB flash drive" and "CASE" ) needs different solution!!!" -->
-
-<section class="pagers">
-    {% if page.previous.url %}
-    <a href="{{page.previous.url}}" class="portfolio-entry-link">
-    {% if page.previous.title == "111 USB flash drive" %}
-        <div class="col col-12 pager-strip pos-rel"> 
-    {% else %}
-        <div class="col col-6 pager-strip pos-rel"> 
-    {% endif %}            
-            <div class="col col-12 pos-rel z-index-2 u-pull-left"> 
-                <div class="padding-left-s">
-                    <div class="u-pull-left">
-                        <h6 class="pager-link inline-link-white"> &laquo;{{page.previous.title}}</h6>
-                    </div>
-                </div>
+    <div class="col col-4 pager-strip pos-rel">
+        {% if page.previous %}
+        <a href="{{page.previous.url}}" class="portfolio-entry-link">
+            <div class="col col-12 pos-rel z-index-2 u-pull-left">
+                <h4 class="pager-link u-pull-left">←</h4>
              </div>
-            <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ page.previous.accent_color }}"></div>
-        </div>
-    </a>
-    {% endif %}
+        </a>
+        {% endif %}
+    </div>
 
-    {% if page.next.url %}
-    <a href="{{page.next.url}}" class="portfolio-entry-link">
-    {% if page.next.title == "The Economist" %}
-        <div class="col col-12 pager-strip pos-rel"> 
-    {% else %}
-        <div class="col col-6 pager-strip pos-rel"> 
-    {% endif %}
-            <div class="col col-12 pos-rel z-index-2 u-pull-right"> 
-                <div class="padding-right-s">
-                    <div class="u-pull-right">
-                        <h6 class="pager-link inline-link-white">{{page.next.title}} &raquo;</h6>
-                    </div>
-                </div>
+    <div class="col col-4 pager-strip pos-rel">
+         <a href="/#recent-work" class="portfolio-entry-link">
+            <h4 class="pager-strip-title">All work</h4>
+        </a>
+    </div>
+
+    <div class="col col-4 pager-strip pos-rel">
+        {% if page.next %}
+        <a href="{{page.next.url}}" class="portfolio-entry-link">
+            <div class="col col-12 pos-rel z-index-2 u-pull-right">
+                <h4 class="pager-link u-pull-right">→</h4>
              </div>
-            <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
-            <div class="full-width z-index-0 pos-abs pos-top-0 pos-bot-0" style="background-color: #{{ page.next.accent_color }}"></div>
-        </div>
-    </a>
-    {% endif %}
+        </a>
+        {% endif %}
+    </div>
+
 </section>
-
-
-

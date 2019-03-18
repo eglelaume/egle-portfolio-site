@@ -1,6 +1,5 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,11 +16,11 @@
     box-sizing: border-box;
 }
 
-
-@media screen and (min-width: 656px) and (max-width: 991px) {
+@media screen and (min-width:656px) and (max-width:991px) {
     .container {
         width: 83.33%;
-        }
+    }
+
 }
 
 .col {
@@ -45,7 +44,6 @@
 .col-4 {
     width: 33.33%;
 }
-
 
 .col-5 {
     width: 41.66%;
@@ -79,47 +77,64 @@
     width: 100%;
 }
 
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both;
+.container:after, .row:after, .u-cf {
+    content: "";
+    display: table;
+    clear: both;
 }
 
+@media screen and (min-width:656px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
 
-@media screen and (min-width: 480px) {
+    .col-md-3 {
+        width: 25%;
+    }
+
     .col-md-4 {
         width: 33.33%;
     }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
     .col-md-6 {
         width: 50%;
     }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
 }
 
-
-@media screen and (max-width: 780px) {
+@media screen and (max-width:780px) {
     .col-md-12 {
         width: 100%;
     }
+
 }
-
-
-
 
 /* Intro header
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 .body-content-container {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-
 }
 
 .body-content-container-panel {
     background-color: #F2F2F2;
 }
-
 
 .page-section {
     margin: auto;
@@ -127,39 +142,34 @@
     float: none;
 }
 
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width:992px) and (max-width:1200px) {
     .page-section {
         width: 66.66%;
     }
+
 }
 
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width:991px) {
     .page-section {
         width: 100%;
-        }
-}
+    }
 
+}
 
 .page-section-full-width {
     margin: auto;
     max-width: 100%;
 }
 
-
-
 .page-section-header {
     margin: 0;
     padding-bottom: 0.5rem;
 }
 
-
 .page-section-header-greeting {
     margin: 0;
     padding-bottom: 1rem;
 }
-
 
 .about-image {
     margin: auto;
@@ -167,77 +177,84 @@
     float: none;
 }
 
-
-
-@media screen and (min-width: 656px) and (max-width: 780px) {
+@media screen and (min-width:656px) and (max-width:780px) {
     .about-image {
         width: 60%;
     }
+
 }
 
-@media screen and (max-width: 656px) {
+@media screen and (max-width:656px) {
     .about-image {
         width: 60%;
-        }
+    }
+
 }
 
-
+.about-list {
+    margin: 0;
+}
 
 /* Portfolio entries strips
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-#recent-work {
-    background-color: #F2F2F2;
-}
-
 .portfolio-entry-strip {
     height: 100%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    }
+}
 
 .portfolio-entry-strip-header {
     padding-bottom: 1.5rem;
 }
 
-
 .portfolio-entry-strip-content-container {
-    margin: auto;
-    float: none;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width:991px) {
     .portfolio-entry-strip-content-container {
         width: 100%;
-        }
+    }
+
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width:992px) and (max-width:1200px) {
     .portfolio-entry-strip-content-container {
-    width: 66.66%;
+        width: 66.66%;
     }
+
 }
 
 .portfolio-entry-strip-title {
-    color: #fff;
+    margin: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.portfolio-entry-strip-title-on-page {
+    color: #000000;
     margin: 0;
 }
 
-
 .portfolio-entry-strip-subtitle {
-    color: #fff;
     margin: 0;
     line-height: 1.44rem;
+}
+
+.portfolio-entry-strip-subtitle-on-page {
+    color: #b6b6b6;
+    margin: 0;
+    line-height: 2.074rem;
+    font-weight: 300;
 }
 
 .portfolio-entry-link {
     text-decoration: none;
 }
 
-
 .portfolio-entry-strip-button-label {
     color: white;
-    margin:0;
+    margin: 0;
 }
 
 .pink-strip {
@@ -249,7 +266,8 @@
 }
 
 .portfolio-entry-strip:hover > .strip-overlay-index {
-    background-color: rgba(18, 18, 18, 0.3);
+
+    /*background-color: rgba(18, 18, 18, 0.3);*/
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
@@ -279,54 +297,53 @@
     background-color: #F25E88
 }
 
-
 /* Footer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 .contact-link {
-    color: black;
+    text-transform: capitalize;
 }
 
-a.contact-link:hover {
-        color: #7A7A7A;
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .footer-details {
+        width: 66.66%;
     }
 
-.footer-details {
-    margin: auto;
-    float: none;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .footer-details{
-    width: 66.66%;
-    }
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width:991px) {
     .footer-details {
         width: 100%;
-        }
-}
+    }
 
-h2.footer-content {
-    margin: auto;
 }
 
 /* Utilities
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 .group:after {
     visibility: hidden;
     display: block;
     content: "";
     clear: both;
     height: 0;
-    }
-* html .group             { zoom: 1; } /* IE6 */
-*:first-child+html .group { zoom: 1; } /* IE7 */
+}
 
+* html .group {
+    zoom: 1;
+}
+
+/* IE6 */
+*:first-child+html .group {
+    zoom: 1;
+}
+
+/* IE7 */
 .full-width {
     width: 100%;
+}
+
+.center {
+    margin: auto;
+    float: none;
 }
 
 .z-index-0 {
@@ -358,11 +375,11 @@ h2.footer-content {
 }
 
 .u-pull-right {
-  float: right;
+    float: right;
 }
 
 .u-pull-left {
-  float: left;
+    float: left;
 }
 
 .image-block {
@@ -371,7 +388,6 @@ h2.footer-content {
 
 /* Other elements
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 hr {
     border: 0;
     height: 0px;
@@ -381,26 +397,27 @@ hr {
     margin: 0px;
 }
 
-
 .inline-link {
     text-decoration: underline;
-    color: #212121;
+    color: #4B4DFF;
+    border-bottom: 10px solid transparent;
 }
 
-.inline-link:hover {
-    color: #7A7A7A;
+.inline-link:hover, .portfolio-entry-link:hover .inline-link {
+    color: #30FBFD;
+    text-decoration: none;
+    border-bottom: 10px solid #30FBFD;
+    transition: color 0.2s, border 0.2s ease-in-out;
 }
 
 .uppercase-link {
-  font-size: 0.694rem; /* ms-1 */
-  font-family: 'Merriweather', serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.08rem;
-  margin: 0px;
+    font-size: 0.694rem; /* ms-1 */
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    margin: 0px;
 }
-
-
 
 .flexcontainer {
     display: -webkit-flex;
@@ -408,38 +425,42 @@ hr {
     flex-direction: column;
     -webkit-flex-wrap: wrap; /* Safari */
     flex-wrap: wrap;
-
 }
 
-@media screen and (min-width: 656px) {
+@media screen and (min-width:656px) {
     .flexcontainer {
         flex-direction: row;
-        }
-}
+    }
 
+}
 
 .portfolio-entry-button {
-   margin-left: auto;
-   -webkit-align-items: flex-end;
+    margin-left: auto;
+    -webkit-align-items: flex-end;
 }
 
-
-@media screen and (max-width: 730px) {
+@media screen and (max-width:730px) {
     .portfolio-entry-button {
-         margin-left: 0;
-         margin-top: 1.8rem;
+        margin-left: 0;
+        margin-top: 1.8rem;
     }
-}
 
+}
 
 .mobile-single {
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
+@media screen and (min-width:656px) {
+    .mobile-single {
+        padding-top: 0rem;
+    }
+
+}
 
 .image-full-width {
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -448,15 +469,21 @@ hr {
     background-color: #FAFAFA;
 }
 
-
+.gradient-border {
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%);
+    border-image-slice: 1;
+    border-width: 0.75rem;
+}
 
 /* Pager
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
+.pagers {
+    margin-bottom: 4rem;
+}
 
 .pager-link {
     margin: auto;
-
 }
 
 .inline-link-white {
@@ -470,7 +497,14 @@ hr {
     padding-bottom: 1rem;
 }
 
-.pager-strip:hover > .strip-overlay-index {
+.pager-strip-title {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.pager-strip:hover .strip-overlay-index {
     background-color: rgba(18, 18, 18, 0.3);
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;

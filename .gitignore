@@ -7,3 +7,6 @@ _site
 
 # Node
 node_modules
+
+# Apple specific stuff
+.DS_Store
