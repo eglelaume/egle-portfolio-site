@@ -4,6 +4,7 @@ var rm = require('gulp-rimraf');
 var pngquant = require('imagemin-pngquant');
 var imageResize = require('gulp-image-resize');
 var parallel = require("concurrent-transform");
+var htmlImg64 = require('gulp-html-img64');
 var os = require("os");
 
 gulp.task('clean', function() {
@@ -32,6 +33,14 @@ gulp.task('imagemin', ['imageresize'], function () {
             use: [pngquant()]
         }))
         .pipe(gulp.dest('./images'));
+});
+
+gulp.task('protect', function () {
+    return gulp.src('./private/**/*.html')
+        .pipe(htmlImg64({
+            imagesDir: '/private'
+        }))
+        .pipe(gulp.dest('./protected'));
 });
 
 gulp.task('build', ['clean', 'copy', 'imageresize', 'imagemin']);

@@ -4,7 +4,8 @@
   "description": "Portfolio of Egle Strockyte",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./build.sh",
+    "dev": "jekyll serve --config _config.yml,_config.dev.yml;"
   },
   "repository": {
     "type": "git",
@@ -25,14 +26,11 @@
   "devDependencies": {
     "concurrent-transform": "^1.0.0",
     "gulp": "^3.8.11",
+    "gulp-html-img64": "^1.0.8",
     "gulp-image-resize": "^0.6.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-rimraf": "^0.1.1",
     "imagemin-pngquant": "^4.1.0",
     "staticrypt": "^1.2.0"
-  },
-  "scripts": {
-    "build" : "./protect.sh; ./node_modules/.bin/gulp build; jekyll build --config _config.yml;",
-    "dev": "jekyll serve --config _config.yml,_config.dev.yml;"
   }
 }
