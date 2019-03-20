@@ -35,6 +35,25 @@ gulp.task('imagemin', ['imageresize'], function () {
         .pipe(gulp.dest('./images'));
 });
 
+gulp.task('protect-imageresize', function () {
+    return gulp.src('./private/**/*.{jpg,png}')
+        .pipe(parallel(
+            imageResize({ width : 1440 }),
+            os.cpus().length
+        ))
+        .pipe(gulp.dest('./private'));
+});
+
+gulp.task('protect-imagemin', ['protect-imageresize'], function () {
+    return gulp.src('./private/**/*.{jpg,png}')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./private'));
+});
+
 gulp.task('protect', function () {
     return gulp.src('./private/**/*.html')
         .pipe(htmlImg64({
