@@ -28,10 +28,11 @@
     "gulp-image-resize": "^0.6.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-rimraf": "^0.1.1",
-    "imagemin-pngquant": "^4.1.0"
+    "imagemin-pngquant": "^4.1.0",
+    "staticrypt": "^1.2.0"
   },
   "scripts": {
-    "build" : "./node_modules/.bin/gulp build; jekyll build --config _config.yml;",
+    "build" : "./protect.sh; ./node_modules/.bin/gulp build; jekyll build --config _config.yml;",
     "dev": "jekyll serve --config _config.yml,_config.dev.yml;"
   }
 }
