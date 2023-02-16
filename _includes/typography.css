@@ -70,7 +70,7 @@ h1 {
 
 @media screen and (min-width:992px) {
   h1 {
-    font-size: 4.0rem; /* ms9 */
+    font-size: 3.7rem; /* ms9 */
     line-height: 1.12;
     letter-spacing: -0.1rem;
   }
