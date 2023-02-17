@@ -44,12 +44,12 @@ a {
 }
 
 p {
-  color: #1E2A34;
+  color: #3E4C59;
   margin: 0;
 }
 
 .content-tags {
-  color: #B6B6B6;
+  color: #99A5B1;
 }
 
 h1 {
@@ -70,7 +70,7 @@ h1 {
 
 @media screen and (min-width:992px) {
   h1 {
-    font-size: 3.7rem; /* ms9 */
+    font-size: 3.3rem; /* ms9 */
     line-height: 1.12;
     letter-spacing: -0.1rem;
   }
