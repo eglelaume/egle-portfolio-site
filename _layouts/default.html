@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en" class="gradient-border">
+<html lang="en" 
+    {% if page.context == "home" %} class="gradient-border" {% endif %} 
+    >
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +16,18 @@
 
     </head>
 
-    <body>
+    <body {% if page.accent_color %} style="background-color: #{{ page.accent_color }};" {% endif %}>
+        
         {% include header.html context=page.context %}
 
-        {{content}}
+        <div {% if page.accent_color %} class="body-content-container" {% endif %}>
+            {{content}}
 
-        {% include footer.html %}
+            {% include footer.html %}
+    
+            {% include analytics.html %}
+        </div>
 
-        {% include analytics.html %}
     </body>
 
 </html>

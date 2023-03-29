@@ -128,12 +128,10 @@
 /* Intro header
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .body-content-container {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
-
-.body-content-container-panel {
-    background-color: #F2F2F2;
+    background-color: #fff; 
+    margin-left: 0.75rem; 
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .page-section {
@@ -236,16 +234,24 @@
     margin: 0;
 }
 
+.portfolio-entry-strip-title-on-page.invert {
+    color: #ffffff;
+}
+
 .portfolio-entry-strip-subtitle {
     margin: 0;
     line-height: 1.44rem;
 }
 
 .portfolio-entry-strip-subtitle-on-page {
-    color: #99A5B1;
+    color: #000000;
     margin: 0;
     line-height: 2.074rem;
     font-weight: 300;
+}
+
+.portfolio-entry-strip-subtitle-on-page.invert {
+    color: #ffffff;
 }
 
 .portfolio-entry-link {
@@ -386,6 +392,11 @@
     display: block;
 }
 
+.image-proportional {
+    max-width: 100%; 
+    height: auto
+}
+
 /* Other elements
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 hr {
@@ -510,3 +521,4 @@ hr {
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
 }
+
