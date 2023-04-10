@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<section class="portfolio-entry-header padding-top-s" {% if page.accent_color %} style="background-color: #{{ page.accent_color }};" {% endif %}>
-    <div class="portfolio-entry-strip portfolio-entry-strip-header pos-rel">
+<section class="portfolio-entry-header padding-bottom-m" {% if page.accent_color %} style="background-color: #{{ page.accent_color }};" {% endif %}>
+    <div class="portfolio-entry-strip-header pos-rel">
         <div class="container">
             {% if page.header_image %}  
             <div class="col">
-                <img class="image-block image-proportional center" src="{{ site.images_path }}/{{ page.header_image }}"/>
+                <img class="image-block image-proportional center padding-bottom-s" src="{{ site.images_path }}/{{ page.header_image }}"/>
             </div>
             
             {% endif %}
             <div class="col col-7 page-section portfolio-entry-strip-content-container">
-                <div class="col col-md-8 mobile-single">
-                    <h3 class="portfolio-entry-strip-title-on-page {% if page.header_color_invert %} invert {% endif %}">{{ page.title }}</h3>
+                <div class="container">
+                    <h3 class="portfolio-entry-strip-title-on-page {% if page.header_color_invert %} invert {% endif %}">{{ page.title-on-page }}</h3>
                     <h4 class="portfolio-entry-strip-subtitle-on-page {% if page.header_color_invert %} invert {% endif %}">{{ page.subtitle }}</h4>
                 </div>
             </div>
@@ -21,7 +21,7 @@ layout: default
     </div>
 </section>
 
-<section class="padding-top-s padding-bottom-s">
+<section class="padding-top-xl padding-bottom-s">
     {{content}}
 </section>
 

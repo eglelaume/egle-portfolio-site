@@ -1,8 +1,6 @@
 <nav class="container navbar padding-top-s padding-bottom-m">
     <div class="col col-6 navbar-logo {% if page.header_color_invert %} invert {% endif %} padding-left-s">
-        {% if include.context != "home" %}
-            <a href="/" >Egle Strockyte</a>     
-        {% endif %}
+            <a href="/" ><b>egle strockyte</b></a>     
     </div>
  
     <div class="col col-6 navbar-item padding-right-s">
@@ -10,8 +8,3 @@
         <a href="/about" class="navbar-item-title {% if page.header_color_invert %} invert {% endif %}">about</a>
     </div>
 </nav>
-
-{% if include.context == "portfolio_entry" %}
-
-
-{% endif %}
