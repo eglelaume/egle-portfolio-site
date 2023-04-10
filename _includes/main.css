@@ -129,9 +129,6 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .body-content-container {
     background-color: #fff; 
-    margin-left: 0.75rem; 
-    margin-right: 0.75rem;
-    margin-bottom: 0.75rem;
 }
 
 .page-section {
@@ -479,7 +476,20 @@ hr {
     .mobile-single {
         padding-top: 0rem;
     }
+}
 
+@media screen and (max-width:656px) {
+    .mobile-grid {
+        display: grid;
+    }
+
+    .mobile-first {
+        order: 1;
+    }
+
+    .mobile-second {
+        order: 2;
+    }
 }
 
 .image-full-width {
@@ -493,11 +503,15 @@ hr {
     background-color: #FAFAFA;
 }
 
-.gradient-border {
+.page-border {
+    border-color: transparent;
     border-style: solid;
+    border-width: 0.75rem;
+}
+
+.gradient-border {
     border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%);
     border-image-slice: 1;
-    border-width: 0.75rem;
 }
 
 .margin-left-m {
@@ -545,4 +559,16 @@ hr {
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
+}
+
+.bird-section-background {
+    background-image: url('{{ site.images_path }}/bird/bird-bg-circle-image.png'); 
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+@media screen and (max-width:656px) {
+    .bird-section-background {
+        background-image: none;
+    }
 }

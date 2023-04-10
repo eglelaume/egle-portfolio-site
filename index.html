@@ -2,8 +2,6 @@
 layout: default
 context: home
 ---
-
-
 <section class="padding-bottom-xl padding-top-l">
     <div class="container">
         <div class="col  page-section">
@@ -20,20 +18,23 @@ context: home
         <hr/>
     </div>
 
-    {% for entry in site.portfolio_entries %}
-    <a href="{{ entry.url }}" class="portfolio-entry-link">
-        <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
-            <div class="container z-index-2"> <!-- holds content within container -->
-                <div class="col  center portfolio-entry-strip-content-container">
-                    <h3 class="portfolio-entry-strip-title inline-link">{{ entry.title }}</h3>
-                    <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
+    {% assign entries = site.portfolio_entries | where:"archived", nil %}
+    {% for entry in entries %}
+        <a href="{{ entry.url }}" class="portfolio-entry-link">
+            <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
+                <div class="container z-index-2"> <!-- holds content within container -->
+                    <div class="col  center portfolio-entry-strip-content-container">
+                        <h3 class="portfolio-entry-strip-title inline-link">{{ entry.title }}</h3>
+                        <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
+                    </div>
                 </div>
-             </div>
-            <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
+                <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
+            </div>
+        </a>
+        {% unless forloop.last %}
+        <div class="container">
+            <hr/>
         </div>
-    </a>
-    <div class="container">
-        <hr/>
-    </div>
+        {% endunless -%}
     {% endfor %}
 </section>

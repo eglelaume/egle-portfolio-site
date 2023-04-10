@@ -28,7 +28,7 @@ layout: default
 <section class="pagers container" style="background-color: #F7F7FF">
 
     <div class="col col-4 pager-strip pos-rel">
-        {% if page.previous %}
+        {% if page.previous and page.previous.archived == nil %}
         <a href="{{page.previous.url}}" class="portfolio-entry-link">
             <div class="col col-12 pos-rel z-index-2 u-pull-left">
                 <h4 class="pager-link u-pull-left">←</h4>
@@ -44,7 +44,7 @@ layout: default
     </div>
 
     <div class="col col-4 pager-strip pos-rel">
-        {% if page.next %}
+        {% if page.next and page.next.archived == nil %}
         <a href="{{page.next.url}}" class="portfolio-entry-link">
             <div class="col col-12 pos-rel z-index-2 u-pull-right">
                 <h4 class="pager-link u-pull-right">→</h4>
