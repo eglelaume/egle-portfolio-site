@@ -128,12 +128,7 @@
 /* Intro header
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .body-content-container {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
-
-.body-content-container-panel {
-    background-color: #F2F2F2;
+    background-color: #fff; 
 }
 
 .page-section {
@@ -169,6 +164,18 @@
 .page-section-header-greeting {
     margin: 0;
     padding-bottom: 1rem;
+}
+
+.page-section-subheader {
+    padding-top: 0rem;
+
+}
+
+@media screen and (min-width:656px) {
+    .page-section-subheader {
+        padding-top: 5rem;
+    }
+
 }
 
 .about-image {
@@ -236,16 +243,25 @@
     margin: 0;
 }
 
+.portfolio-entry-strip-title-on-page.invert {
+    color: #ffffff;
+}
+
 .portfolio-entry-strip-subtitle {
     margin: 0;
     line-height: 1.44rem;
 }
 
 .portfolio-entry-strip-subtitle-on-page {
-    color: #99A5B1;
+    color: #000000;
     margin: 0;
     line-height: 2.074rem;
     font-weight: 300;
+    text-align: center;
+}
+
+.portfolio-entry-strip-subtitle-on-page.invert {
+    color: #ffffff;
 }
 
 .portfolio-entry-link {
@@ -386,6 +402,11 @@
     display: block;
 }
 
+.image-proportional {
+    max-width: 100%; 
+    height: auto
+}
+
 /* Other elements
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 hr {
@@ -455,7 +476,20 @@ hr {
     .mobile-single {
         padding-top: 0rem;
     }
+}
 
+@media screen and (max-width:656px) {
+    .mobile-grid {
+        display: grid;
+    }
+
+    .mobile-first {
+        order: 1;
+    }
+
+    .mobile-second {
+        order: 2;
+    }
 }
 
 .image-full-width {
@@ -469,12 +503,28 @@ hr {
     background-color: #FAFAFA;
 }
 
-.gradient-border {
+.page-border {
+    border-color: transparent;
     border-style: solid;
-    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%);
-    border-image-slice: 1;
     border-width: 0.75rem;
 }
+
+.gradient-border {
+    border-image: linear-gradient(to bottom, #30FBFD 0%, #AA01FF 100%);
+    border-image-slice: 1;
+}
+
+.margin-left-m {
+    margin-left: 0rem;
+}
+
+@media screen and (min-width:656px) {
+    .margin-left-m {
+        margin-left: 3rem;
+    }
+
+}
+
 
 /* Pager
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -509,4 +559,16 @@ hr {
     transition: background-color .25s ease-in-out;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
+}
+
+.bird-section-background {
+    background-image: url('{{ site.images_path }}/bird/bird-bg-circle-image.png'); 
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+@media screen and (max-width:656px) {
+    .bird-section-background {
+        background-image: none;
+    }
 }

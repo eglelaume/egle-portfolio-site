@@ -2,31 +2,33 @@
 layout: default
 ---
 
-<div class="container padding-top-s">
-    <hr/>
-</div>
-
-<section class="portfolio-entry-header">
-    <div class="portfolio-entry-strip portfolio-entry-strip-header pos-rel">
+<section class="portfolio-entry-header padding-bottom-m" {% if page.accent_color %} style="background-color: #{{ page.accent_color }};" {% endif %}>
+    <div class="portfolio-entry-strip-header pos-rel">
         <div class="container">
+            {% if page.header_image %}  
+            <div class="col">
+                <img class="image-block image-proportional center padding-bottom-s" src="{{ site.images_path }}/{{ page.header_image }}"/>
+            </div>
+            
+            {% endif %}
             <div class="col col-7 page-section portfolio-entry-strip-content-container">
-                <div class="col col-md-8 mobile-single">
-                    <h3 class="portfolio-entry-strip-title-on-page">{{ page.title }}</h3>
-                    <h4 class="portfolio-entry-strip-subtitle-on-page">{{ page.subtitle }}</h4>
+                <div class="container">
+                    <h3 class="portfolio-entry-strip-title-on-page {% if page.header_color_invert %} invert {% endif %}">{{ page.title-on-page }}</h3>
+                    <h4 class="portfolio-entry-strip-subtitle-on-page {% if page.header_color_invert %} invert {% endif %}">{{ page.subtitle }}</h4>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
+<section class="padding-top-xl padding-bottom-s">
     {{content}}
 </section>
 
 <section class="pagers container" style="background-color: #F7F7FF">
 
     <div class="col col-4 pager-strip pos-rel">
-        {% if page.previous %}
+        {% if page.previous and page.previous.archived == nil %}
         <a href="{{page.previous.url}}" class="portfolio-entry-link">
             <div class="col col-12 pos-rel z-index-2 u-pull-left">
                 <h4 class="pager-link u-pull-left">←</h4>
@@ -42,7 +44,7 @@ layout: default
     </div>
 
     <div class="col col-4 pager-strip pos-rel">
-        {% if page.next %}
+        {% if page.next and page.next.archived == nil %}
         <a href="{{page.next.url}}" class="portfolio-entry-link">
             <div class="col col-12 pos-rel z-index-2 u-pull-right">
                 <h4 class="pager-link u-pull-right">→</h4>

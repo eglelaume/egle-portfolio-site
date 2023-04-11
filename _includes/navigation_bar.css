@@ -28,6 +28,9 @@
   padding-bottom: 2rem;
   color: #000;
 }
+.navbar-logo.invert a {
+  color: #ffffff;
+}
 
 /* Below is .navbar-logo type settings on any device that has resolution 656px or larger */
 @media screen and (min-width:656px) {
@@ -58,6 +61,7 @@
 }
 
 .navbar-item-title {
+  color:#000000;
   font-size: 0.833rem;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
@@ -68,6 +72,9 @@
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.navbar-item-title.invert {
+  color: #ffffff;
 }
 
 .navbar-item-title:hover {

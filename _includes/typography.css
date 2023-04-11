@@ -116,6 +116,15 @@ h4 {
   font-weight: 700;
 }
 
+@media screen and (min-width:656px) {
+  h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.728rem; /* ms3 */
+    line-height: 1.2;
+  }
+
+}
+
 h5 {
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem; /* ms1 */

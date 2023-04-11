@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="gradient-border">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +11,21 @@
         <link rel="stylesheet" href="/css/all.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700">
-
     </head>
 
-    <body>
+    <body {% if page.accent_color %} style="background-color: #{{ page.accent_color }};" {% endif %} 
+        class="page-border {% if page.context == "home" %} gradient-border {% endif %}">
+        
         {% include header.html context=page.context %}
 
-        {{content}}
+        <div {% if page.accent_color %} class="body-content-container" {% endif %}>
+            {{content}}
 
-        {% include footer.html %}
+            {% include footer.html %}
+    
+            {% include analytics.html %}
+        </div>
 
-        {% include analytics.html %}
     </body>
 
 </html>

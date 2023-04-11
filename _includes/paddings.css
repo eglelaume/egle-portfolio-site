@@ -50,6 +50,28 @@
 
 }
 
+.padding-top-xl {
+	padding-top: 4rem;
+}
+
+@media screen and (min-width:656px) {
+	.padding-top-xl {
+		padding-top: 5.5rem;
+	}
+
+}
+
+.padding-bottom-xl {
+	padding-bottom: 4rem;
+}
+
+@media screen and (min-width:656px) {
+	.padding-bottom-xl {
+		padding-bottom: 5.5rem;
+	}
+
+}
+
 .padding-top-l {
 	padding-top: 2.5rem;
 }
