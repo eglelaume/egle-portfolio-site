@@ -3,7 +3,7 @@ collections:
         output: true
         permalink: /portfolio/:title/
 
-exclude: ["private", "artwork", "node_modules", "gulpfile.js", "*.log", "package.json"]
+exclude: ["private", "artwork", "node_modules", "gulpfile.js", "*.log", "package.json", "package-lock.json"]
 
 keep_files: ["images", "protected"]
 
