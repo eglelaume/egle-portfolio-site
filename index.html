@@ -18,23 +18,24 @@ context: home
         <hr/>
     </div>
 
-    {% assign entries = site.portfolio_entries | where:"archived", nil %}
-    {% for entry in entries %}
-        <a href="{{ entry.url }}" class="portfolio-entry-link">
-            <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
-                <div class="container z-index-2"> <!-- holds content within container -->
-                    <div class="col  center portfolio-entry-strip-content-container">
-                        <h3 class="portfolio-entry-strip-title inline-link">{{ entry.title }}</h3>
-                        <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
+    {% for entry in site.portfolio_entries %}
+        {% if entry.archived != true %}
+            <a href="{{ entry.url }}" class="portfolio-entry-link">
+                <div class="portfolio-entry-strip pos-rel"> <!-- allows me to bleed the strip to full-width -->
+                    <div class="container z-index-2"> <!-- holds content within container -->
+                        <div class="col  center portfolio-entry-strip-content-container">
+                            <h3 class="portfolio-entry-strip-title inline-link">{{ entry.title }}</h3>
+                            <p class="portfolio-entry-strip-subtitle">{{ entry.subtitle }}</p>
+                        </div>
                     </div>
+                    <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
                 </div>
-                <div class="strip-overlay-index full-width z-index-1 pos-abs pos-top-0 pos-bot-0"></div>
+            </a>
+            {% unless forloop.last %}
+            <div class="container">
+                <hr/>
             </div>
-        </a>
-        {% unless forloop.last %}
-        <div class="container">
-            <hr/>
-        </div>
-        {% endunless -%}
+            {% endunless -%}
+        {% endif %}
     {% endfor %}
 </section>
