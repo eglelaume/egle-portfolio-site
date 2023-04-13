@@ -25,9 +25,9 @@
   "homepage": "https://github.com/eglelaume/egle-portfolio-site",
   "devDependencies": {
     "concurrent-transform": "^1.0.0",
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.2",
     "gulp-html-img64": "^1.0.8",
-    "gulp-image-resize": "^0.6.0",
+    "gulp-image-resize": "^0.13.1",
     "gulp-imagemin": "^2.2.1",
     "gulp-rimraf": "^0.1.1",
     "imagemin-pngquant": "^4.1.0",
